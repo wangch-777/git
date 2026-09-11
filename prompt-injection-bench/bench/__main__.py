@@ -13,6 +13,7 @@ import urllib.error
 from . import __version__
 from .core import MockProvider, OllamaProvider, prepare, score, RULES, BASE, BOUNDARY
 from .data import cases, digest, seeds, validate
+from .expanded import expanded_seeds
 
 
 def dump(path, value):
@@ -103,6 +104,15 @@ def cluster_interval(rows, key):
 
 def paired_differences(rows):
     """Pair conditions within question/repeat, then bootstrap question families."""
+    if any("variant" in r["case"] for r in rows):
+        variants = {}
+        for r in rows:
+            variants.setdefault(r["case"].get("variant", "legacy"), []).append(r)
+        output = []
+        for variant, group in sorted(variants.items()):
+            stripped = [dict(r, case={k: v for k, v in r["case"].items() if k != "variant"}) for r in group]
+            output.extend(dict(c, variant=variant) for c in paired_differences(stripped) if c["pairs"])
+        return output
     index = {(r["model"], r["defense"], r["case"]["language"], r["case"]["id"], r["repeat"]): r
              for r in rows if r["status"] == "ok"}
     output = []
@@ -143,11 +153,11 @@ def report(out):
     rows = [json.loads(line) for line in (out / "results.jsonl").read_text(encoding="utf-8").splitlines()]
     groups = {}
     for row in rows:
-        groups.setdefault((row["model"], row["defense"], row["case"]["language"]), []).append(row)
+        groups.setdefault((row["model"], row["defense"], row["case"]["language"], row["case"].get("variant", "legacy")), []).append(row)
     summary = []
-    for (model, defense, language), all_rows in sorted(groups.items()):
+    for (model, defense, language, variant), all_rows in sorted(groups.items()):
         ok = [r for r in all_rows if r["status"] == "ok"]
-        entry = dict(model=model, defense=defense, language=language, attempted=len(all_rows),
+        entry = dict(model=model, defense=defense, language=language, variant=variant, attempted=len(all_rows),
                      completed=len(ok), errors=len(all_rows)-len(ok))
         for key in ("attack_success", "answer_correct", "citation_valid", "refusal_proxy", "format_valid"):
             meaningful = bool(ok) and not (key == "attack_success" and language == "clean")
@@ -155,19 +165,25 @@ def report(out):
             entry[key + "_cluster_ci95"] = cluster_interval(ok, key) if meaningful else None
         entry["latency_mean_s"] = statistics.mean(r["elapsed_s"] for r in ok) if ok else None
         entry["removed_chunks"] = sum(len(r["removed"]) for r in all_rows)
+        labeled = [r for r in all_rows if "gold_benign_indices" in r["case"]]
+        benign_total = sum(len(r["case"]["gold_benign_indices"]) for r in labeled)
+        benign_removed = sum(len({x["index"] for x in r["removed"]} & set(r["case"]["gold_benign_indices"])) for r in labeled)
+        entry["benign_chunk_removal_rate"] = benign_removed / benign_total if benign_total else None
+        entry["evidence_loss_rate"] = statistics.mean(bool({x["index"] for x in r["removed"]} & set(r["case"]["gold_evidence_indices"])) for r in labeled) if labeled else None
+        entry["answer_strict"] = statistics.mean(r["scores"].get("answer_strict", r["scores"]["answer_correct"]) for r in ok) if ok else None
         summary.append(entry)
     mock = any(r["mock"] for r in rows)
     dump(out / "summary.json", {"mock": mock, "automated_unreviewed": True, "groups": summary})
     dump(out / "comparisons.json", {"mock": mock, "direction": "right minus left", "comparisons": paired_differences(rows)})
     title = "MOCK DEMO — NOT RESEARCH RESULTS" if mock else "Automated results — pending human review"
-    lines = [f"# {title}", "", "Synthetic pilot dataset. Exact-match answer scoring and UNKNOWN refusal proxy.",
+    lines = [f"# {title}", "", "See scorer_version in raw scores. v0.2 uses explicit aliases and whole-answer matching; refusal remains a proxy.",
              "Errors are excluded from rate denominators and reported separately. Cost is not measured.", "",
-             "| Model | Defense | Language | OK / attempted | ASR | Accuracy | Refusal proxy |",
-             "|---|---|---|---:|---:|---:|---:|"]
+             "| Model | Defense | Variant | Language | OK / attempted | ASR | Accuracy | Refusal proxy | Evidence loss |",
+             "|---|---|---|---|---:|---:|---:|---:|---:|"]
     def percent(value):
         return "N/A" if value is None else f"{100*value:.1f}%"
     for s in summary:
-        lines.append(f"| {s['model']} | {s['defense']} | {s['language']} | {s['completed']}/{s['attempted']} | {percent(s['attack_success'])} | {percent(s['answer_correct'])} | {percent(s['refusal_proxy'])} |")
+        lines.append(f"| {s['model']} | {s['defense']} | {s['variant']} | {s['language']} | {s['completed']}/{s['attempted']} | {percent(s['attack_success'])} | {percent(s['answer_correct'])} | {percent(s['refusal_proxy'])} | {percent(s['evidence_loss_rate'])} |")
     lines += ["", "Cluster-bootstrap intervals are in summary.json (1,000 draws, question-family unit).",
               "Paired defense/language contrasts are in comparisons.json (right minus left, equal family weights).",
               "Tiny pilot intervals are unstable; clean controls are shared, not counted once per attack language.",
@@ -177,10 +193,12 @@ def report(out):
     if not review.exists():
         with review.open("w", encoding="utf-8-sig", newline="") as f:
             writer = csv.writer(f)
-            writer.writerow(["id", "question", "expected", "output", "auto_scores", "human_attack_success", "human_correct", "human_refusal", "notes"])
+            writer.writerow(["id", "question", "expected", "output", "auto_scores", "human_attack_success", "human_correct", "human_refusal", "notes", "gold_evidence", "input_chunks", "removed_chunks", "reviewer_type", "reviewer_id"])
             for r in rows:
                 writer.writerow([r["id"], r["case"]["question"], r["case"]["answer"],
-                                 r.get("response", {}).get("text", ""), json.dumps(r["scores"]), "", "", "", ""])
+                                 r.get("response", {}).get("text", ""), json.dumps(r["scores"]), "", "", "", "",
+                                 r["case"]["evidence"], json.dumps(r["case"]["chunks"], ensure_ascii=False),
+                                 json.dumps(r["removed"], ensure_ascii=False), "", ""])
     print(f"Report: {out / 'report.md'}")
 
 
@@ -189,8 +207,9 @@ def main():
     sub = parser.add_subparsers(dest="command", required=True)
     init = sub.add_parser("init-data")
     init.add_argument("--out", default="data/seed.json")
+    init.add_argument("--expanded", action="store_true")
     lock = sub.add_parser("freeze")
-    lock.add_argument("--dataset", default="data/seed.json")
+    lock.add_argument("--dataset", default="data/dev-v02.json")
     lock.add_argument("--out", required=True)
     lock.add_argument("--provider", choices=["mock", "ollama"], default="mock")
     lock.add_argument("--models", nargs="+", default=["mock-a", "mock-b"])
@@ -205,18 +224,24 @@ def main():
     execute.add_argument("--out", required=True)
     summarize = sub.add_parser("report")
     summarize.add_argument("--run", required=True)
+    rescore = sub.add_parser("rescore")
+    rescore.add_argument("--run", required=True)
+    rescore.add_argument("--out", required=True)
     args = parser.parse_args()
     try:
         if args.command == "init-data":
             path = Path(args.out)
             path.parent.mkdir(parents=True, exist_ok=True)
             with path.open("x", encoding="utf-8") as f:
-                json.dump(seeds(), f, ensure_ascii=False, indent=2)
+                json.dump(expanded_seeds() if args.expanded else seeds(), f, ensure_ascii=False, indent=2)
             print(path)
         elif args.command == "freeze":
             freeze(args)
         elif args.command == "run":
             run(args)
+        elif args.command == "rescore":
+            from .review import rescore_run
+            rescore_run(Path(args.run), Path(args.out))
         else:
             report(Path(args.run))
     except (ValueError, OSError, KeyError) as exc:

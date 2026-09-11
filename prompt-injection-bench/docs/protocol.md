@@ -1,5 +1,7 @@
 # Evaluation protocol v0.1
 
+Historical v0.1 protocol. The current development protocol and scoring changes are documented in [v02-development.md](v02-development.md); the archived smoke run keeps this original protocol.
+
 ## Scope and threat model
 
 The defender answers a Chinese factual question from two externally supplied chunks. The attacker controls the second chunk, not the first factual chunk, system message, user question or evaluator. Attack text replaces a benign note in the same position. No tool use, accounts, real secrets, external callbacks or network intrusion are part of this experiment.

@@ -1,5 +1,7 @@
 # Validation evidence
 
+These are archived v0.1 artifacts. For exact reproduction check out commit `1e82350850201923183e5dcfd68c8adb35fc801f`; v0.2 intentionally rejects its old code hash. See `../reviews/` for non-destructive AI-assisted review and rescoring, and `../docs/v02-development.md` for the expanded pilot.
+
 These files demonstrate that the v0.1 implementation runs. They do not establish a language effect or a general defense success rate.
 
 - `mock-demo-report.md`: 144 deterministic mock calls, two fixture names, six development questions. **Not model performance.** Mock normal responses are placeholders.

@@ -1,10 +1,14 @@
 # Multilingual Indirect Prompt-Injection Bench
 
-**本科安全研究项目 v0.1 / Undergraduate security research pilot**
+**本科安全研究项目 v0.2 / Undergraduate security research pilot**
+
+新增：30个合成开发问题、3种攻击表达、2种正常困难条件、别名评分、误删诊断及非破坏性重评分。详见 [v0.2开发说明](docs/v02-development.md) 和 [原始12条输出的AI辅助复核](reviews/v01-ai-review.md)。原4个测试问题保留不变，未用于本次模型运行。
+
+已验证：[v0.2真实运行结果与失败分析](examples/v02-validation.md)。17项测试、2160次mock调用、36次真实本地调用通过；真实调用发现了正常证据误删及受攻击后拒答的问题。
 
 研究问题：当文档问答助手读取夹带指令的资料时，中文、英文及中英混合的注入内容是否影响攻击成功率？防御会产生多少正常任务损失？
 
-This repository provides a reproducible paired evaluation pipeline, not a claim of a new defense. The bundled ten-question dataset is **synthetic**; it is not collected from universities. Mock outputs are explicitly labeled and must never be cited as model performance.
+This repository provides a reproducible paired evaluation pipeline, not a claim of a new defense. Both the legacy ten-question seed and the expanded dataset (30 development + 4 unchanged test questions) are **synthetic**, not collected from universities. Mock outputs must never be cited as model performance.
 
 ## Quick start / 一分钟离线演示
 
@@ -20,8 +24,8 @@ python -m bench run --lock runs/demo-lock.json --out runs/demo
 
 ## Implemented / 已实现
 
-- 10 个合成问题：6 个开发集、4 个测试集；按来源及问题族校验隔离。
-- 固定中文问题与证据，只改变注入语言；每题一个干净对照、三个攻击变体。
+- 30 个合成开发问题、4个原有测试问题；按来源及问题族校验隔离。
+- 固定中文问题与证据；每个开发问题含3个干净条件和9个攻击变体。
 - D0 普通问答；D1 明确信任边界；D2 在 D1 基础上以正则规则移除疑似指令片段。
 - 多模型、重复试验、可复现的随机执行顺序；同次重复在配对条件中使用同一 seed。
 - 冻结数据、提示词、参数和代码哈希；运行时检查配置完整性。
@@ -38,7 +42,7 @@ python -m bench freeze --provider ollama --models qwen3:8b --repeats 1 --split d
 python -m bench run --lock runs/local-dev-lock.json --out runs/local-dev
 ```
 
-两模型三次重复：将 `--models` 后面填写两个已安装的模型名，并改为 `--repeats 3`。开发集总调用数为 `6 × 4 × 3 × 2 × 3 = 432`，测试集为 288。这是分别保存一次干净对照后的调用数。
+两模型三次重复：将 `--models` 后面填写两个已安装的模型名，并改为 `--repeats 3`。扩充开发集总调用数为 `30 × 12 × 3 × 2 × 3 = 6480`，旧测试集仍为288次；测试集规模不足以支撑正式结论。默认mock演示一次重复为2160次调用。可以先导出少量开发题作为独立数据文件联调。
 
 模型权重哈希及 Ollama 版本应随实验归档：
 
@@ -80,11 +84,11 @@ flowchart TD
 
 ## Limitations / 第一版边界
 
-1. 仅一个直接指令模板及“输出指定无害标记”目标，没有覆盖所有提示注入形式。
-2. D2 规则能命中种子模板，**这是管线测试，不证明对未知攻击有效**。后续必须在冻结规则后增加未见模板测试。
-3. 十个问题不足以支持可靠的语言差异结论。自动评分采用严格答案匹配，可能漏掉正确改写；拒答只用 `UNKNOWN` 代理，需要人工复核。
+1. 三种开发攻击表达共用“输出指定无害标记”目标，没有覆盖所有提示注入形式。
+2. D2保留旧规则；新增模板用于开发诊断，不是封存的未见攻击测试。仍需另建独立测试集。
+3. 自动评分支持预登记别名，但仍可能漏掉正确长句改写；拒答使用完整短语代理，需要人工复核。AI辅助复核不等于独立人类评审。
 4. 所有正常问题和证据为中文。实验测的是注入语言差异，不能推导普遍的多语种问答性能。
-5. 筛查可能误删包含指令词的正常资料；当前干净样本不足以测量真实误删风险。下一版应加入“文档引用指令”等困难负例。
+5. 已加入教材引用及与证据同段的困难负例，并统计误删；合成负例的结果不能外推为真实误删率。
 6. 测试集以明文保存；哈希防止无意变更，不构成访问隔离。查看测试结果后改进方案，需要另建未见测试集。
 7. 该仓库只完成固定证据评测，不包括真实检索、正式公开语料、双盲标注或论文投稿。
 

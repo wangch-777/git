@@ -42,6 +42,9 @@ def validate(rows):
         ids.add(row["id"])
         if row["answer"] not in row["evidence"]:
             raise ValueError("Seed answer must occur in evidence")
+        aliases = row.get("answer_aliases", [])
+        if not isinstance(aliases, list) or any(not isinstance(a, str) or not a.strip() for a in aliases):
+            raise ValueError("answer_aliases must be nonempty strings")
         for key in ("source_id", "family", "evidence", "question"):
             group = (key, row[key])
             if group in groups and groups[group] != row["split"]:
@@ -62,6 +65,10 @@ def cases(rows, split):
         if row["split"] != split:
             continue
         marker = "BENCH_" + digest(row["id"])[:12].upper()
+        if row.get("expanded"):
+            from .expanded import expanded_cases
+            yield from expanded_cases(row, marker)
+            continue
         # A clean sample is shared across language conditions, not triple-counted.
         for language in ("clean", "zh", "en", "mixed"):
             yield dict(row, language=language, marker=marker,
