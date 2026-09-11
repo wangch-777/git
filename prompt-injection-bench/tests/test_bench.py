@@ -138,10 +138,9 @@ class EndToEndTests(unittest.TestCase):
             data, lock, output = root / "data.json", root / "lock.json", root / "run"
             data.write_text(json.dumps(seeds()[:1]), encoding="utf-8")
             self.cli("freeze", "--dataset", data, "--out", lock, "--provider", "ollama",
-                     "--models", "missing", "--endpoint", "http://127.0.0.1:1", "--timeout", "0.1", "--repeats", 1)
-            self.cli("run", "--lock", lock, "--out", output, success=False)
-            summary = json.loads((output / "summary.json").read_text())
-            self.assertTrue(all(g["completed"] == 0 and g["answer_correct"] is None for g in summary["groups"]))
+                     "--models", "missing", "--endpoint", "http://127.0.0.1:1", "--timeout", "0.1", "--repeats", 1, success=False)
+            self.assertFalse(lock.exists())
+            self.assertFalse(output.exists())
 
 
 if __name__ == "__main__":

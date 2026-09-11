@@ -14,6 +14,7 @@ from . import __version__
 from .core import MockProvider, OllamaProvider, prepare, score, RULES, BASE, BOUNDARY
 from .data import cases, digest, seeds, validate
 from .expanded import expanded_seeds
+from .identity import model_digests, verify
 
 
 def dump(path, value):
@@ -40,6 +41,12 @@ def freeze(args):
                   endpoint=args.endpoint, dataset=rows, dataset_sha256=digest(rows),
                   code_sha256=source_hash(), screening_rules=RULES,
                   prompts={"base": BASE, "boundary": BOUNDARY})
+    config['model_digests'] = model_digests(args.endpoint, args.models, args.timeout) if args.provider == 'ollama' else {}
+    config['identity_policy'] = 'ollama_manifest_sha256_pre_post_v1' if args.provider == 'ollama' else 'mock_not_applicable'
+    for assertion in args.digest:
+        name, separator, expected = assertion.partition('=')
+        if not separator or config['model_digests'].get(name) != expected:
+            raise ValueError('Expected --digest MODEL=FULL_SHA256 does not match installed local model')
     destination = Path(args.out)
     destination.parent.mkdir(parents=True, exist_ok=True)
     with destination.open("x", encoding="utf-8") as f:
@@ -53,12 +60,18 @@ def run(args):
     config = lock["config"]
     if digest(config) != lock["sha256"] or digest(config["dataset"]) != config["dataset_sha256"]:
         raise ValueError("Lock integrity check failed")
+    # Legacy real-model locks must never be described as weight-pinned.
+    if config['provider'] == 'ollama' and not config.get('model_digests'):
+        raise ValueError('Unpinned legacy lock: freeze a new experiment with model digests')
     if source_hash() != config["code_sha256"]:
         raise ValueError("Code changed since freeze; create a new lock")
     validate(config["dataset"])
+    identity_before = verify(config)
     out = Path(args.out)
     out.mkdir(parents=True, exist_ok=False)
     dump(out / "lock.json", lock)
+    verification = {'before': identity_before, 'after': None, 'status': 'running'}
+    dump(out / 'model-verification.json', verification)
     dump(out / "environment.json", {"python": sys.version, "started_utc": datetime.datetime.now(datetime.timezone.utc).isoformat(),
                                    "mock": config["provider"] == "mock", "platform": sys.platform})
     provider = MockProvider() if config["provider"] == "mock" else OllamaProvider(config["endpoint"], config["timeout"], config["temperature"])
@@ -85,7 +98,18 @@ def run(args):
             f.flush()
             if (i + 1) % 20 == 0 or i + 1 == len(jobs):
                 print(f"{i+1}/{len(jobs)} completed; errors={failures}", flush=True)
+    identity_error = None
+    try:
+        verification['after'] = verify(config)
+        verification['status'] = 'verified_pre_post' if config['provider'] == 'ollama' else 'mock_not_applicable'
+    except (OSError, ValueError, KeyError) as exc:
+        verification['status'] = 'failed_postcheck'
+        verification['error_type'] = type(exc).__name__
+        identity_error = exc
+    dump(out / 'model-verification.json', verification)
     report(out)
+    if identity_error:
+        raise ValueError('Post-run model identity check failed; results are not verified') from identity_error
     if failures:
         raise ValueError(f"{failures} provider errors; preserved logs in {out}")
 
@@ -173,10 +197,13 @@ def report(out):
         entry["answer_strict"] = statistics.mean(r["scores"].get("answer_strict", r["scores"]["answer_correct"]) for r in ok) if ok else None
         summary.append(entry)
     mock = any(r["mock"] for r in rows)
-    dump(out / "summary.json", {"mock": mock, "automated_unreviewed": True, "groups": summary})
-    dump(out / "comparisons.json", {"mock": mock, "direction": "right minus left", "comparisons": paired_differences(rows)})
+    verification_path = out / 'model-verification.json'
+    identity = json.loads(verification_path.read_text(encoding='utf-8'))['status'] if verification_path.exists() else 'legacy_unverified'
+    dump(out / "summary.json", {"mock": mock, "model_identity": identity, "automated_unreviewed": True, "groups": summary})
+    dump(out / "comparisons.json", {"mock": mock, "model_identity": identity, "direction": "right minus left", "comparisons": paired_differences(rows)})
     title = "MOCK DEMO — NOT RESEARCH RESULTS" if mock else "Automated results — pending human review"
     lines = [f"# {title}", "", "See scorer_version in raw scores. v0.2 uses explicit aliases and whole-answer matching; refusal remains a proxy.",
+             f"Model identity: {identity}. See model-verification.json when present.",
              "Errors are excluded from rate denominators and reported separately. Cost is not measured.", "",
              "| Model | Defense | Variant | Language | OK / attempted | ASR | Accuracy | Refusal proxy | Evidence loss |",
              "|---|---|---|---|---:|---:|---:|---:|---:|"]
@@ -219,6 +246,8 @@ def main():
     lock.add_argument("--temperature", type=float, default=0.2)
     lock.add_argument("--timeout", type=float, default=120)
     lock.add_argument("--endpoint", default="http://localhost:11434")
+    lock.add_argument('--digest', action='append', default=[], metavar='MODEL=FULL_SHA256',
+                      help='Optional expected digest assertion; actual digests are always fetched for Ollama')
     execute = sub.add_parser("run")
     execute.add_argument("--lock", required=True)
     execute.add_argument("--out", required=True)
