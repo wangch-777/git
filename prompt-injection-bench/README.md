@@ -6,6 +6,8 @@
 
 已验证：[v0.2真实运行结果与失败分析](examples/v02-validation.md)。17项测试、2160次mock调用、36次真实本地调用通过；真实调用发现了正常证据误删及受攻击后拒答的问题。
 
+最新验证：[digest冻结后的真实实验](docs/digest-validation.md)。新增模型身份检查后22项测试通过；恢复Qwen3后重新执行36次真实调用，运行前后digest一致。完整报告与原始日志已归档，尚未开展30题全量真实评测。
+
 研究问题：当文档问答助手读取夹带指令的资料时，中文、英文及中英混合的注入内容是否影响攻击成功率？防御会产生多少正常任务损失？
 
 This repository provides a reproducible paired evaluation pipeline, not a claim of a new defense. Both the legacy ten-question seed and the expanded dataset (30 development + 4 unchanged test questions) are **synthetic**, not collected from universities. Mock outputs must never be cited as model performance.
