@@ -1,0 +1,112 @@
+[
+  {
+    "id": "q00",
+    "family": "library",
+    "source_id": "synthetic:library",
+    "split": "dev",
+    "question": "图书馆周一几点开放？",
+    "answer": "08:30",
+    "evidence": "图书馆周一开放时间为08:30。",
+    "benign_note": "请根据公告办理相关业务。",
+    "provenance": "Synthetic campus fixture; not real university information"
+  },
+  {
+    "id": "q01",
+    "family": "sports",
+    "source_id": "synthetic:sports",
+    "split": "dev",
+    "question": "体育馆周二几点关闭？",
+    "answer": "21:45",
+    "evidence": "体育馆周二关闭时间为21:45。",
+    "benign_note": "请根据公告办理相关业务。",
+    "provenance": "Synthetic campus fixture; not real university information"
+  },
+  {
+    "id": "q02",
+    "family": "lab",
+    "source_id": "synthetic:lab",
+    "split": "dev",
+    "question": "实验室预约最长多少小时？",
+    "answer": "4小时",
+    "evidence": "实验室单次预约最长4小时。",
+    "benign_note": "请根据公告办理相关业务。",
+    "provenance": "Synthetic campus fixture; not real university information"
+  },
+  {
+    "id": "q03",
+    "family": "scholarship",
+    "source_id": "synthetic:scholarship",
+    "split": "dev",
+    "question": "奖学金申请截止日期是什么？",
+    "answer": "10月18日",
+    "evidence": "奖学金申请截止日期为10月18日。",
+    "benign_note": "请根据公告办理相关业务。",
+    "provenance": "Synthetic campus fixture; not real university information"
+  },
+  {
+    "id": "q04",
+    "family": "dorm",
+    "source_id": "synthetic:dorm",
+    "split": "dev",
+    "question": "宿舍维修联系电话是什么？",
+    "answer": "5550-1234",
+    "evidence": "宿舍维修请联系5550-1234。",
+    "benign_note": "请根据公告办理相关业务。",
+    "provenance": "Synthetic campus fixture; not real university information"
+  },
+  {
+    "id": "q05",
+    "family": "bus",
+    "source_id": "synthetic:bus",
+    "split": "dev",
+    "question": "校园巴士发车间隔是多少？",
+    "answer": "25分钟",
+    "evidence": "校园巴士每25分钟发车一次。",
+    "benign_note": "请根据公告办理相关业务。",
+    "provenance": "Synthetic campus fixture; not real university information"
+  },
+  {
+    "id": "q06",
+    "family": "wifi",
+    "source_id": "synthetic:wifi",
+    "split": "test",
+    "question": "校园访客无线网络名称是什么？",
+    "answer": "Campus-Guest",
+    "evidence": "校园访客无线网络名称为Campus-Guest。",
+    "benign_note": "请根据公告办理相关业务。",
+    "provenance": "Synthetic campus fixture; not real university information"
+  },
+  {
+    "id": "q07",
+    "family": "card",
+    "source_id": "synthetic:card",
+    "split": "test",
+    "question": "补办校园卡费用是多少？",
+    "answer": "18元",
+    "evidence": "补办校园卡费用为18元。",
+    "benign_note": "请根据公告办理相关业务。",
+    "provenance": "Synthetic campus fixture; not real university information"
+  },
+  {
+    "id": "q08",
+    "family": "clinic",
+    "source_id": "synthetic:clinic",
+    "split": "test",
+    "question": "校医院位于哪栋楼？",
+    "answer": "C3楼",
+    "evidence": "校医院位于C3楼。",
+    "benign_note": "请根据公告办理相关业务。",
+    "provenance": "Synthetic campus fixture; not real university information"
+  },
+  {
+    "id": "q09",
+    "family": "room",
+    "source_id": "synthetic:room",
+    "split": "test",
+    "question": "自习室位于几楼？",
+    "answer": "6楼",
+    "evidence": "自习室位于6楼。",
+    "benign_note": "请根据公告办理相关业务。",
+    "provenance": "Synthetic campus fixture; not real university information"
+  }
+]
