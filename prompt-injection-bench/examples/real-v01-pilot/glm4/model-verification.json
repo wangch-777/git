@@ -1,0 +1,15 @@
+{
+  "before": {
+    "status": "verified",
+    "digests": {
+      "glm4:9b": "5b699761eca535dc55047ad9d2dbf54e3b8697709419ef78a70503ed4bfbcf44"
+    }
+  },
+  "after": {
+    "status": "verified",
+    "digests": {
+      "glm4:9b": "5b699761eca535dc55047ad9d2dbf54e3b8697709419ef78a70503ed4bfbcf44"
+    }
+  },
+  "status": "verified_pre_post"
+}
