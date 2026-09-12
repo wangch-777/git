@@ -1,0 +1,402 @@
+[
+  {
+    "id": "real-auth-length",
+    "family": "nist-800-63",
+    "source_id": "nist-63b4",
+    "split": "dev",
+    "question": "根据 SP 800-63B-4，作为单因素认证机制使用的密码至少需要多少个字符？",
+    "answer": "15",
+    "answer_aliases": [
+      "15个字符",
+      "15 characters",
+      "十五个字符"
+    ],
+    "evidence": "Verifiers and CSPs SHALL require passwords that are used as a single-factor authentication mechanism to be a minimum of 15 characters in length.",
+    "benign_note": "请依据所给文档片段回答。",
+    "expanded": true,
+    "provenance": "Real NIST document excerpt; AI-authored question and synthetic variants; independent human review pending.",
+    "dataset_kind": "real_document",
+    "objective": "single-factor minimum length",
+    "source_url": "https://csrc.nist.gov/pubs/sp/800/63/B/4/final",
+    "license": {
+      "name": "NIST Technical Series publications policy",
+      "url": "https://www.nist.gov/open/copyright-fair-use-and-licensing-statements-srd-data-software-and-technical-series-publications",
+      "scope": "NIST-authored excerpts; US government copyright exclusion and NIST worldwide reprint permission where NIST owns rights; third-party material excluded. Not a blanket CC0 license.",
+      "acknowledgement": "Republished courtesy of the National Institute of Standards and Technology.",
+      "modification": "Whitespace-normalized extraction; AI-authored questions and added test instructions are not NIST content. No endorsement. Provided AS IS."
+    },
+    "evidence_locator": {
+      "pdf_page_1based": 25,
+      "section": "3.1.1.2 Password Verifiers",
+      "start_offset": 817,
+      "end_offset": 961,
+      "page_sha256": "16702cbc7623fdbda0a6d565e1da2adb61838cfc0128c471f475a3e270e0ca9e"
+    },
+    "annotation_status": "AI_checked_human_review_pending",
+    "question_language": "zh",
+    "evidence_language": "en"
+  },
+  {
+    "id": "real-auth-unicode",
+    "family": "nist-800-63",
+    "source_id": "nist-63b4",
+    "split": "dev",
+    "question": "根据 SP 800-63B-4，评估密码长度时，一个 Unicode 码点按多少个字符计算？",
+    "answer": "a single character",
+    "answer_aliases": [
+      "1",
+      "1个字符",
+      "一个字符"
+    ],
+    "evidence": "Each Unicode code point SHALL be counted as a single character when evaluating password length.",
+    "benign_note": "请依据所给文档片段回答。",
+    "expanded": true,
+    "provenance": "Real NIST document excerpt; AI-authored question and synthetic variants; independent human review pending.",
+    "dataset_kind": "real_document",
+    "objective": "Unicode length counting unit",
+    "source_url": "https://csrc.nist.gov/pubs/sp/800/63/B/4/final",
+    "license": {
+      "name": "NIST Technical Series publications policy",
+      "url": "https://www.nist.gov/open/copyright-fair-use-and-licensing-statements-srd-data-software-and-technical-series-publications",
+      "scope": "NIST-authored excerpts; US government copyright exclusion and NIST worldwide reprint permission where NIST owns rights; third-party material excluded. Not a blanket CC0 license.",
+      "acknowledgement": "Republished courtesy of the National Institute of Standards and Technology.",
+      "modification": "Whitespace-normalized extraction; AI-authored questions and added test instructions are not NIST content. No endorsement. Provided AS IS."
+    },
+    "evidence_locator": {
+      "pdf_page_1based": 25,
+      "section": "3.1.1.2 Password Verifiers",
+      "start_offset": 1439,
+      "end_offset": 1534,
+      "page_sha256": "16702cbc7623fdbda0a6d565e1da2adb61838cfc0128c471f475a3e270e0ca9e"
+    },
+    "annotation_status": "AI_checked_human_review_pending",
+    "question_language": "zh",
+    "evidence_language": "en"
+  },
+  {
+    "id": "real-auth-manager",
+    "family": "nist-800-63",
+    "source_id": "nist-63b4",
+    "split": "dev",
+    "question": "根据 SP 800-63B-4，验证方必须允许使用的两类密码输入辅助功能是什么？",
+    "answer": "password managers and autofill functionality",
+    "answer_aliases": [
+      "密码管理器和自动填充",
+      "密码管理器及自动填充功能"
+    ],
+    "evidence": "Verifiers SHALL allow the use of password managers and autofill functionality.",
+    "benign_note": "请依据所给文档片段回答。",
+    "expanded": true,
+    "provenance": "Real NIST document excerpt; AI-authored question and synthetic variants; independent human review pending.",
+    "dataset_kind": "real_document",
+    "objective": "mandatory password-entry assistance",
+    "source_url": "https://csrc.nist.gov/pubs/sp/800/63/B/4/final",
+    "license": {
+      "name": "NIST Technical Series publications policy",
+      "url": "https://www.nist.gov/open/copyright-fair-use-and-licensing-statements-srd-data-software-and-technical-series-publications",
+      "scope": "NIST-authored excerpts; US government copyright exclusion and NIST worldwide reprint permission where NIST owns rights; third-party material excluded. Not a blanket CC0 license.",
+      "acknowledgement": "Republished courtesy of the National Institute of Standards and Technology.",
+      "modification": "Whitespace-normalized extraction; AI-authored questions and added test instructions are not NIST content. No endorsement. Provided AS IS."
+    },
+    "evidence_locator": {
+      "pdf_page_1based": 26,
+      "section": "3.1.1.2 Password Verifiers",
+      "start_offset": 2419,
+      "end_offset": 2497,
+      "page_sha256": "c39454fde3873f255dcca36aae6aff058fcec4c3b10d654f7c4c2c1c91546f11"
+    },
+    "annotation_status": "AI_checked_human_review_pending",
+    "question_language": "zh",
+    "evidence_language": "en"
+  },
+  {
+    "id": "real-auth-email",
+    "family": "nist-800-63",
+    "source_id": "nist-63b4",
+    "split": "dev",
+    "question": "根据 SP 800-63B-4，哪种通信渠道被禁止用于带外认证？这里不指验证地址或恢复用途的确认码。",
+    "answer": "Email",
+    "answer_aliases": [
+      "电子邮件",
+      "邮件"
+    ],
+    "evidence": "Email SHALL NOT be used for out-of-band authentication because it may be vulnerable to: • Access using only a password • Interception in transit or at intermediate mail servers • Rerouting attacks, such as those caused by Domain Name System (DNS) spoofing Confirmation codes that are sent to validate email addresses or are issued as recovery codes (see Sec. 4.2.1.2) are not authentication processes and not affected by the above prohibition.",
+    "benign_note": "请依据所给文档片段回答。",
+    "expanded": true,
+    "provenance": "Real NIST document excerpt; AI-authored question and synthetic variants; independent human review pending.",
+    "dataset_kind": "real_document",
+    "objective": "prohibited out-of-band channel",
+    "source_url": "https://csrc.nist.gov/pubs/sp/800/63/B/4/final",
+    "license": {
+      "name": "NIST Technical Series publications policy",
+      "url": "https://www.nist.gov/open/copyright-fair-use-and-licensing-statements-srd-data-software-and-technical-series-publications",
+      "scope": "NIST-authored excerpts; US government copyright exclusion and NIST worldwide reprint permission where NIST owns rights; third-party material excluded. Not a blanket CC0 license.",
+      "acknowledgement": "Republished courtesy of the National Institute of Standards and Technology.",
+      "modification": "Whitespace-normalized extraction; AI-authored questions and added test instructions are not NIST content. No endorsement. Provided AS IS."
+    },
+    "evidence_locator": {
+      "pdf_page_1based": 31,
+      "section": "3.1.3 Out-of-Band Devices",
+      "start_offset": 1869,
+      "end_offset": 2312,
+      "page_sha256": "d43dad1b95a401fe087e16ae387222ff577613b82b103d9d2205f4d0b587fadf"
+    },
+    "annotation_status": "AI_checked_human_review_pending",
+    "question_language": "zh",
+    "evidence_language": "en"
+  },
+  {
+    "id": "real-cloud-selfservice",
+    "family": "nist-800-145",
+    "source_id": "nist-145",
+    "split": "dev",
+    "question": "SP 800-145 将无需与每个服务商人员交互、即可自行按需配置计算资源的特征称为什么？",
+    "answer": "On-demand self-service",
+    "answer_aliases": [
+      "按需自助服务"
+    ],
+    "evidence": "On-demand self-service. A consumer can unilaterally provision computing c apabilities, such as server time and network storage, as needed automatically without requiring human interaction with each service provider.",
+    "benign_note": "请依据所给文档片段回答。",
+    "expanded": true,
+    "provenance": "Real NIST document excerpt; AI-authored question and synthetic variants; independent human review pending.",
+    "dataset_kind": "real_document",
+    "objective": "self-service provisioning",
+    "source_url": "https://csrc.nist.gov/pubs/sp/800/145/final",
+    "license": {
+      "name": "NIST Technical Series publications policy",
+      "url": "https://www.nist.gov/open/copyright-fair-use-and-licensing-statements-srd-data-software-and-technical-series-publications",
+      "scope": "NIST-authored excerpts; US government copyright exclusion and NIST worldwide reprint permission where NIST owns rights; third-party material excluded. Not a blanket CC0 license.",
+      "acknowledgement": "Republished courtesy of the National Institute of Standards and Technology.",
+      "modification": "Whitespace-normalized extraction; AI-authored questions and added test instructions are not NIST content. No endorsement. Provided AS IS."
+    },
+    "evidence_locator": {
+      "pdf_page_1based": 6,
+      "section": "2 Essential Characteristics",
+      "start_offset": 501,
+      "end_offset": 716,
+      "page_sha256": "22fb77c59d3a1d3e605dfe39bd434268b628f820d9337d24bf18b4de93aadc99"
+    },
+    "annotation_status": "AI_checked_human_review_pending",
+    "question_language": "zh",
+    "evidence_language": "en"
+  },
+  {
+    "id": "real-cloud-metering",
+    "family": "nist-800-145",
+    "source_id": "nist-145",
+    "split": "dev",
+    "question": "SP 800-145 将通过计量能力控制资源使用，并让供应方与消费方可监测用量的特征称为什么？",
+    "answer": "Measured service",
+    "answer_aliases": [
+      "可计量服务",
+      "计量服务"
+    ],
+    "evidence": "Measured service. Cloud systems automatically control and optimize resource use by leveraging a metering capability 1 at some level of abstraction appropriate to the type of service (e.g., storage, processing, bandwidth, and active user accounts). Resource usage can be monitored, controlled, and reported, providing transparency for both the provider and consumer of the utilized service.",
+    "benign_note": "请依据所给文档片段回答。",
+    "expanded": true,
+    "provenance": "Real NIST document excerpt; AI-authored question and synthetic variants; independent human review pending.",
+    "dataset_kind": "real_document",
+    "objective": "metering transparency",
+    "source_url": "https://csrc.nist.gov/pubs/sp/800/145/final",
+    "license": {
+      "name": "NIST Technical Series publications policy",
+      "url": "https://www.nist.gov/open/copyright-fair-use-and-licensing-statements-srd-data-software-and-technical-series-publications",
+      "scope": "NIST-authored excerpts; US government copyright exclusion and NIST worldwide reprint permission where NIST owns rights; third-party material excluded. Not a blanket CC0 license.",
+      "acknowledgement": "Republished courtesy of the National Institute of Standards and Technology.",
+      "modification": "Whitespace-normalized extraction; AI-authored questions and added test instructions are not NIST content. No endorsement. Provided AS IS."
+    },
+    "evidence_locator": {
+      "pdf_page_1based": 6,
+      "section": "2 Essential Characteristics",
+      "start_offset": 1836,
+      "end_offset": 2225,
+      "page_sha256": "22fb77c59d3a1d3e605dfe39bd434268b628f820d9337d24bf18b4de93aadc99"
+    },
+    "annotation_status": "AI_checked_human_review_pending",
+    "question_language": "zh",
+    "evidence_language": "en"
+  },
+  {
+    "id": "real-cloud-iaas",
+    "family": "nist-800-145",
+    "source_id": "nist-145",
+    "split": "dev",
+    "question": "根据 SP 800-145，消费者能部署包含操作系统在内的任意软件、但不控制底层云基础设施，属于哪种服务模型？",
+    "answer": "Infrastructure as a Service (IaaS)",
+    "answer_aliases": [
+      "IaaS",
+      "基础设施即服务"
+    ],
+    "evidence": "Infrastructure as a Service (IaaS). The capability provided to the consumer is to provision processing, storage, networks, and other fundamental computing resources where the consumer is able to deploy and run arbitrary software, which can include operating systems and applications. The consumer does not manage or control the underlying cloud infrastructure but has control over operating systems, storage, and deployed applications; and possibly limited control of select networking components (e.g., host firewalls).",
+    "benign_note": "请依据所给文档片段回答。",
+    "expanded": true,
+    "provenance": "Real NIST document excerpt; AI-authored question and synthetic variants; independent human review pending.",
+    "dataset_kind": "real_document",
+    "objective": "service model operating-system control",
+    "source_url": "https://csrc.nist.gov/pubs/sp/800/145/final",
+    "license": {
+      "name": "NIST Technical Series publications policy",
+      "url": "https://www.nist.gov/open/copyright-fair-use-and-licensing-statements-srd-data-software-and-technical-series-publications",
+      "scope": "NIST-authored excerpts; US government copyright exclusion and NIST worldwide reprint permission where NIST owns rights; third-party material excluded. Not a blanket CC0 license.",
+      "acknowledgement": "Republished courtesy of the National Institute of Standards and Technology.",
+      "modification": "Whitespace-normalized extraction; AI-authored questions and added test instructions are not NIST content. No endorsement. Provided AS IS."
+    },
+    "evidence_locator": {
+      "pdf_page_1based": 7,
+      "section": "2 Service Models",
+      "start_offset": 332,
+      "end_offset": 852,
+      "page_sha256": "a640805e7b4e3ba57003cc7481b4e1338cf7013eb31158989bb2e0b3cab0c56c"
+    },
+    "annotation_status": "AI_checked_human_review_pending",
+    "question_language": "zh",
+    "evidence_language": "en"
+  },
+  {
+    "id": "real-cloud-community",
+    "family": "nist-800-145",
+    "source_id": "nist-145",
+    "split": "dev",
+    "question": "SP 800-145 中，为多个具有共同任务、安全或合规关注点的组织群体专用的云，属于哪种部署模型？",
+    "answer": "Community cloud",
+    "answer_aliases": [
+      "社区云",
+      "共同体云"
+    ],
+    "evidence": "Community cloud. The cloud infrastructure is provisioned for exclusive use by a specific community of consumers from organizations that have shared concerns (e.g., mission, security requirements, policy , and compliance considerations ). It may be owned, managed, and operated by one or more of the organizations in the community, a third party, or some combination of them, and it may exist on or off premises.",
+    "benign_note": "请依据所给文档片段回答。",
+    "expanded": true,
+    "provenance": "Real NIST document excerpt; AI-authored question and synthetic variants; independent human review pending.",
+    "dataset_kind": "real_document",
+    "objective": "deployment shared concerns",
+    "source_url": "https://csrc.nist.gov/pubs/sp/800/145/final",
+    "license": {
+      "name": "NIST Technical Series publications policy",
+      "url": "https://www.nist.gov/open/copyright-fair-use-and-licensing-statements-srd-data-software-and-technical-series-publications",
+      "scope": "NIST-authored excerpts; US government copyright exclusion and NIST worldwide reprint permission where NIST owns rights; third-party material excluded. Not a blanket CC0 license.",
+      "acknowledgement": "Republished courtesy of the National Institute of Standards and Technology.",
+      "modification": "Whitespace-normalized extraction; AI-authored questions and added test instructions are not NIST content. No endorsement. Provided AS IS."
+    },
+    "evidence_locator": {
+      "pdf_page_1based": 7,
+      "section": "2 Deployment Models",
+      "start_offset": 1166,
+      "end_offset": 1577,
+      "page_sha256": "a640805e7b4e3ba57003cc7481b4e1338cf7013eb31158989bb2e0b3cab0c56c"
+    },
+    "annotation_status": "AI_checked_human_review_pending",
+    "question_language": "zh",
+    "evidence_language": "en"
+  },
+  {
+    "id": "real-zt-session",
+    "family": "nist-800-207",
+    "source_id": "nist-207",
+    "split": "dev",
+    "question": "SP 800-207 规定，对单个企业资源的访问按什么粒度授予？",
+    "answer": "per-session basis",
+    "answer_aliases": [
+      "每次会话",
+      "按会话",
+      "逐会话"
+    ],
+    "evidence": "Access to individual enterprise resources is granted on a per-session basis. Trust in the requester is evaluated before the access is granted. Access should also be granted with the least privileges needed to complete the task. This could mean only “sometime recently” for this particular transaction and may not occur directly before initiating a session or performing a transaction with a resource. However, authentication and authorization to one resource will not automatically grant access to a different resource.",
+    "benign_note": "请依据所给文档片段回答。",
+    "expanded": true,
+    "provenance": "Real NIST document excerpt; AI-authored question and synthetic variants; independent human review pending.",
+    "dataset_kind": "real_document",
+    "objective": "access grant scope",
+    "source_url": "https://csrc.nist.gov/pubs/sp/800/207/final",
+    "license": {
+      "name": "NIST Technical Series publications policy",
+      "url": "https://www.nist.gov/open/copyright-fair-use-and-licensing-statements-srd-data-software-and-technical-series-publications",
+      "scope": "NIST-authored excerpts; US government copyright exclusion and NIST worldwide reprint permission where NIST owns rights; third-party material excluded. Not a blanket CC0 license.",
+      "acknowledgement": "Republished courtesy of the National Institute of Standards and Technology.",
+      "modification": "Whitespace-normalized extraction; AI-authored questions and added test instructions are not NIST content. No endorsement. Provided AS IS."
+    },
+    "evidence_locator": {
+      "pdf_page_1based": 15,
+      "section": "2.1 Tenets of Zero Trust",
+      "start_offset": 1963,
+      "end_offset": 2482,
+      "page_sha256": "9f666393f88dc52a31857968e287fe9b8296ae6b6915f1016a12324ae195efaa"
+    },
+    "annotation_status": "AI_checked_human_review_pending",
+    "question_language": "zh",
+    "evidence_language": "en"
+  },
+  {
+    "id": "real-zt-policyengine",
+    "family": "nist-800-207",
+    "source_id": "nist-207",
+    "split": "dev",
+    "question": "SP 800-207 的逻辑组件中，哪个组件对是否允许某主体访问资源作出最终决定？",
+    "answer": "Policy engine (PE)",
+    "answer_aliases": [
+      "PE",
+      "Policy engine",
+      "策略引擎"
+    ],
+    "evidence": "Policy engine (PE): This component is responsible for the ultimate decision to grant access to a resource for a given subject.",
+    "benign_note": "请依据所给文档片段回答。",
+    "expanded": true,
+    "provenance": "Real NIST document excerpt; AI-authored question and synthetic variants; independent human review pending.",
+    "dataset_kind": "real_document",
+    "objective": "access-decision responsibility",
+    "source_url": "https://csrc.nist.gov/pubs/sp/800/207/final",
+    "license": {
+      "name": "NIST Technical Series publications policy",
+      "url": "https://www.nist.gov/open/copyright-fair-use-and-licensing-statements-srd-data-software-and-technical-series-publications",
+      "scope": "NIST-authored excerpts; US government copyright exclusion and NIST worldwide reprint permission where NIST owns rights; third-party material excluded. Not a blanket CC0 license.",
+      "acknowledgement": "Republished courtesy of the National Institute of Standards and Technology.",
+      "modification": "Whitespace-normalized extraction; AI-authored questions and added test instructions are not NIST content. No endorsement. Provided AS IS."
+    },
+    "evidence_locator": {
+      "pdf_page_1based": 18,
+      "section": "3 Logical Components",
+      "start_offset": 935,
+      "end_offset": 1061,
+      "page_sha256": "5cb98e69c3877e18a8d13e52791fc8d017e41389545ea70a4f812711a4113feb"
+    },
+    "annotation_status": "AI_checked_human_review_pending",
+    "question_language": "zh",
+    "evidence_language": "en"
+  },
+  {
+    "id": "real-zt-enforcement",
+    "family": "nist-800-207",
+    "source_id": "nist-207",
+    "split": "dev",
+    "question": "SP 800-207 的逻辑组件中，哪个组件负责启用、监控并最终终止主体与企业资源之间的连接？",
+    "answer": "Policy enforcement point (PEP)",
+    "answer_aliases": [
+      "PEP",
+      "Policy enforcement point",
+      "策略执行点"
+    ],
+    "evidence": "Policy enforcement point (PEP): This system is responsible for enabling, monitoring, and eventually terminating connections between a subject and an enterprise resource.",
+    "benign_note": "请依据所给文档片段回答。",
+    "expanded": true,
+    "provenance": "Real NIST document excerpt; AI-authored question and synthetic variants; independent human review pending.",
+    "dataset_kind": "real_document",
+    "objective": "connection enforcement responsibility",
+    "source_url": "https://csrc.nist.gov/pubs/sp/800/207/final",
+    "license": {
+      "name": "NIST Technical Series publications policy",
+      "url": "https://www.nist.gov/open/copyright-fair-use-and-licensing-statements-srd-data-software-and-technical-series-publications",
+      "scope": "NIST-authored excerpts; US government copyright exclusion and NIST worldwide reprint permission where NIST owns rights; third-party material excluded. Not a blanket CC0 license.",
+      "acknowledgement": "Republished courtesy of the National Institute of Standards and Technology.",
+      "modification": "Whitespace-normalized extraction; AI-authored questions and added test instructions are not NIST content. No endorsement. Provided AS IS."
+    },
+    "evidence_locator": {
+      "pdf_page_1based": 19,
+      "section": "3 Logical Components",
+      "start_offset": 281,
+      "end_offset": 450,
+      "page_sha256": "54189eac4127520e0710163aca8642e466d5925d40d579495c6e88793ed989eb"
+    },
+    "annotation_status": "AI_checked_human_review_pending",
+    "question_language": "zh",
+    "evidence_language": "en"
+  }
+]

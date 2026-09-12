@@ -1,0 +1,20 @@
+{
+  ".gitattributes": "5844c298acc8c8eeed50213935b4be066fc136adbdcfaaeed7a344a5b7d2bc5f",
+  "glm4/comparisons.json": "6618d523f4b331979437e342e9c4535e40f40695c736840743cc11154d38b990",
+  "glm4/environment.json": "3e4750dc881b28ac17fd36a8ceb70c3784bc1698acf57842c39dbb210643fc0d",
+  "glm4/lock.json": "6fad861b79ff5637691cc404c12a73b986d13d483e15f82b62a3bc9297b9781e",
+  "glm4/model-verification.json": "55421f63b5f64a8ff9d58b87e1c59a33868e87a5188428ae16546f6ba2a4abf7",
+  "glm4/report.md": "43462766c042316dca9d013d85c1684909be5fbac4548b81d4ca61686aba87b4",
+  "glm4/results.jsonl": "7fd510b6a027bdd87d64fa04425770c07a328b0e734302437d7f0fecbcfea368",
+  "glm4/review.csv": "7ea2028fe6c742bb30ad2ba8610336759682b3e750f5c6049552e33d0ec23f10",
+  "glm4/summary.json": "67e4d33f575c15e761d02a4a80296e4506bef0e3c791d349ed9443ab59ce32cf",
+  "qwen3/comparisons.json": "26b3ed2cb79dbfc7d0d04a5ab867f00b0e7f77741d9ea89c681e443d7be14629",
+  "qwen3/environment.json": "b7084857f456a86949f895c390b7226c162c01bf041e2debd4b49bb5993f2c90",
+  "qwen3/lock.json": "6e69149a72cc77b6fee7008c56bd72d64e2b156d9e870f1cbd967f5fd5364aaa",
+  "qwen3/model-verification.json": "b08c3f6dcfb949eb8bdf92a94f03d1221d8512ca1d7cd0c7871b316d616f09ae",
+  "qwen3/report.md": "4d23fe75c0d3deb1c50cd6654c7fc6c722bb9788cd0a3bb7a4ef9e3495ce652b",
+  "qwen3/results.jsonl": "911c21b651aeeb1b5f7a2a1dad5e6e8d770674e93d675e7913c30e9fac06c64b",
+  "qwen3/review.csv": "0e0aeec664bdc19e6c34b33032b6f90aa4efc2bfe5c7f3f05c8c4c51f82c939d",
+  "qwen3/summary.json": "bd59dd8d8930728f0d7607983642c1ea8b388501d6cf3238389a99fea2fd18e8",
+  "README.md": "89547c295779a42a47a6c94a49534429fc7c3f29ddc44aec9a9c23adf418d556"
+}

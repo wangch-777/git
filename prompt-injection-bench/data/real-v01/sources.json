@@ -1,0 +1,140 @@
+[
+  {
+    "id": "nist-145",
+    "family": "nist-800-145",
+    "split": "dev",
+    "title": "The NIST Definition of Cloud Computing",
+    "version": "SP 800-145, September 2011",
+    "publisher": "NIST",
+    "landing_url": "https://csrc.nist.gov/pubs/sp/800/145/final",
+    "pdf_url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-145.pdf",
+    "doi": "https://doi.org/10.6028/NIST.SP.800-145",
+    "retrieved_at": "2026-09-11T13:26:25.345825+00:00",
+    "resolved_url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-145.pdf",
+    "pdf_sha256": "7b0c1a9fdfc67218b8ba2098f448c100c27070db91736b3c87fed63bfa21d418",
+    "extractor": "pypdf 6.10.0",
+    "normalization": "collapse Unicode whitespace to single ASCII spaces; no translation",
+    "license": {
+      "name": "NIST Technical Series publications policy",
+      "url": "https://www.nist.gov/open/copyright-fair-use-and-licensing-statements-srd-data-software-and-technical-series-publications",
+      "scope": "NIST-authored excerpts; US government copyright exclusion and NIST worldwide reprint permission where NIST owns rights; third-party material excluded. Not a blanket CC0 license.",
+      "acknowledgement": "Republished courtesy of the National Institute of Standards and Technology.",
+      "modification": "Whitespace-normalized extraction; AI-authored questions and added test instructions are not NIST content. No endorsement. Provided AS IS."
+    }
+  },
+  {
+    "id": "nist-197",
+    "family": "nist-fips-197",
+    "split": "test",
+    "title": "Advanced Encryption Standard (AES)",
+    "version": "FIPS 197 updated May 9, 2023",
+    "publisher": "NIST",
+    "landing_url": "https://csrc.nist.gov/pubs/fips/197/final",
+    "pdf_url": "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.197-upd1.pdf",
+    "doi": "https://doi.org/10.6028/NIST.FIPS.197-upd1",
+    "retrieved_at": "2026-09-11T13:26:29.252766+00:00",
+    "resolved_url": "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.197-upd1.pdf",
+    "pdf_sha256": "62c86eb567f13edb8f71826e985da870b04ef6381634f303cdb16e84d47becd1",
+    "extractor": "pypdf 6.10.0",
+    "normalization": "collapse Unicode whitespace to single ASCII spaces; no translation",
+    "license": {
+      "name": "NIST Technical Series publications policy",
+      "url": "https://www.nist.gov/open/copyright-fair-use-and-licensing-statements-srd-data-software-and-technical-series-publications",
+      "scope": "NIST-authored excerpts; US government copyright exclusion and NIST worldwide reprint permission where NIST owns rights; third-party material excluded. Not a blanket CC0 license.",
+      "acknowledgement": "Republished courtesy of the National Institute of Standards and Technology.",
+      "modification": "Whitespace-normalized extraction; AI-authored questions and added test instructions are not NIST content. No endorsement. Provided AS IS."
+    }
+  },
+  {
+    "id": "nist-207",
+    "family": "nist-800-207",
+    "split": "dev",
+    "title": "Zero Trust Architecture",
+    "version": "SP 800-207, August 2020",
+    "publisher": "NIST",
+    "landing_url": "https://csrc.nist.gov/pubs/sp/800/207/final",
+    "pdf_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf",
+    "doi": "https://doi.org/10.6028/NIST.SP.800-207",
+    "retrieved_at": "2026-09-11T13:26:27.474632+00:00",
+    "resolved_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf",
+    "pdf_sha256": "0290d6ece24874287316f4bf430fef770aa4ec08a2227c8f2c1e5b2ff975e03d",
+    "extractor": "pypdf 6.10.0",
+    "normalization": "collapse Unicode whitespace to single ASCII spaces; no translation",
+    "license": {
+      "name": "NIST Technical Series publications policy",
+      "url": "https://www.nist.gov/open/copyright-fair-use-and-licensing-statements-srd-data-software-and-technical-series-publications",
+      "scope": "NIST-authored excerpts; US government copyright exclusion and NIST worldwide reprint permission where NIST owns rights; third-party material excluded. Not a blanket CC0 license.",
+      "acknowledgement": "Republished courtesy of the National Institute of Standards and Technology.",
+      "modification": "Whitespace-normalized extraction; AI-authored questions and added test instructions are not NIST content. No endorsement. Provided AS IS."
+    }
+  },
+  {
+    "id": "nist-34r1",
+    "family": "nist-800-34",
+    "split": "test",
+    "title": "Contingency Planning Guide for Federal Information Systems",
+    "version": "SP 800-34 Rev.1, updated November 11, 2010",
+    "publisher": "NIST",
+    "landing_url": "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final",
+    "pdf_url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-34r1.pdf",
+    "doi": "https://doi.org/10.6028/NIST.SP.800-34r1",
+    "retrieved_at": "2026-09-11T13:26:31.002466+00:00",
+    "resolved_url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-34r1.pdf",
+    "pdf_sha256": "476f04d4c60b0770c1ac8b2720551972074ce78e936a3e7a535048416111d0df",
+    "extractor": "pypdf 6.10.0",
+    "normalization": "collapse Unicode whitespace to single ASCII spaces; no translation",
+    "license": {
+      "name": "NIST Technical Series publications policy",
+      "url": "https://www.nist.gov/open/copyright-fair-use-and-licensing-statements-srd-data-software-and-technical-series-publications",
+      "scope": "NIST-authored excerpts; US government copyright exclusion and NIST worldwide reprint permission where NIST owns rights; third-party material excluded. Not a blanket CC0 license.",
+      "acknowledgement": "Republished courtesy of the National Institute of Standards and Technology.",
+      "modification": "Whitespace-normalized extraction; AI-authored questions and added test instructions are not NIST content. No endorsement. Provided AS IS."
+    }
+  },
+  {
+    "id": "nist-63b4",
+    "family": "nist-800-63",
+    "split": "dev",
+    "title": "Digital Identity Guidelines: Authentication and Authenticator Management",
+    "version": "SP 800-63B-4, July 2025 final",
+    "publisher": "NIST",
+    "landing_url": "https://csrc.nist.gov/pubs/sp/800/63/B/4/final",
+    "pdf_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-63b-4.pdf",
+    "doi": "https://doi.org/10.6028/NIST.SP.800-63B-4",
+    "retrieved_at": "2026-09-11T13:26:27.135685+00:00",
+    "resolved_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-63b-4.pdf",
+    "pdf_sha256": "d9ab89576b5ae2cfb3ba37781110788dea27a85a5079496dbfc1a79834670afd",
+    "extractor": "pypdf 6.10.0",
+    "normalization": "collapse Unicode whitespace to single ASCII spaces; no translation",
+    "license": {
+      "name": "NIST Technical Series publications policy",
+      "url": "https://www.nist.gov/open/copyright-fair-use-and-licensing-statements-srd-data-software-and-technical-series-publications",
+      "scope": "NIST-authored excerpts; US government copyright exclusion and NIST worldwide reprint permission where NIST owns rights; third-party material excluded. Not a blanket CC0 license.",
+      "acknowledgement": "Republished courtesy of the National Institute of Standards and Technology.",
+      "modification": "Whitespace-normalized extraction; AI-authored questions and added test instructions are not NIST content. No endorsement. Provided AS IS."
+    }
+  },
+  {
+    "id": "nist-8259a",
+    "family": "nist-8259",
+    "split": "test",
+    "title": "IoT Device Cybersecurity Capability Core Baseline",
+    "version": "IR 8259A, May 2020",
+    "publisher": "NIST",
+    "landing_url": "https://csrc.nist.gov/pubs/ir/8259/a/final",
+    "pdf_url": "https://nvlpubs.nist.gov/nistpubs/ir/2020/NIST.IR.8259A.pdf",
+    "doi": "https://doi.org/10.6028/NIST.IR.8259A",
+    "retrieved_at": "2026-09-11T13:26:38.023541+00:00",
+    "resolved_url": "https://nvlpubs.nist.gov/nistpubs/ir/2020/NIST.IR.8259A.pdf",
+    "pdf_sha256": "b3b54b00b5ac3f3582a3e3fd17d3f25b18f848a51f113000b6489adbcce374b4",
+    "extractor": "pypdf 6.10.0",
+    "normalization": "collapse Unicode whitespace to single ASCII spaces; no translation",
+    "license": {
+      "name": "NIST Technical Series publications policy",
+      "url": "https://www.nist.gov/open/copyright-fair-use-and-licensing-statements-srd-data-software-and-technical-series-publications",
+      "scope": "NIST-authored excerpts; US government copyright exclusion and NIST worldwide reprint permission where NIST owns rights; third-party material excluded. Not a blanket CC0 license.",
+      "acknowledgement": "Republished courtesy of the National Institute of Standards and Technology.",
+      "modification": "Whitespace-normalized extraction; AI-authored questions and added test instructions are not NIST content. No endorsement. Provided AS IS."
+    }
+  }
+]
