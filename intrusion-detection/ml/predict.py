@@ -23,20 +23,44 @@ def predict_dataframe(
     label_map = model_pack["meta"]["label_map"]
     threshold = model_pack["meta"]["threshold"]
 
-    X = drop_target_and_id(df).reindex(columns=feature_list)
+    if df.empty:
+        raise ValueError("CSV 没有数据行")
+    if df.columns.duplicated().any():
+        raise ValueError("CSV 含重复列名")
+    missing = [c for c in feature_list if c not in df.columns]
+    if missing:
+        raise ValueError(f"缺少模型必需字段: {', '.join(missing)}")
+    X = drop_target_and_id(df).loc[:, feature_list].copy()
+    for name, _, columns in model_pack["preprocessor"].transformers_:
+        if name == "num":
+            for col in columns:
+                try:
+                    X[col] = pd.to_numeric(X[col], errors="raise")
+                except (ValueError, TypeError) as exc:
+                    raise ValueError(f"字段 {col} 必须是数值") from exc
+            if np.isinf(X[columns].to_numpy(dtype=float)).any():
+                raise ValueError("数值字段含无穷值")
     proba = model_pack["classifier"].predict_proba(
         model_pack["preprocessor"].transform(X)
     )
-    pred_idx = np.argmax(proba, axis=1) if _is_multiclass(proba) else (
-        (proba[:, 1] >= (threshold if threshold is not None else 0.5)).astype(int)
-    )
-    score = proba.max(axis=1)
+    classes = model_pack["classifier"].classes_
+    if len(classes) == 2 and set(classes) == {0, 1}:
+        cutoff = threshold if threshold is not None else 0.5
+        if not 0 <= cutoff <= 1:
+            raise ValueError("阈值必须在 0 到 1 之间")
+        attack_index = int(np.flatnonzero(classes == 1)[0])
+        predicted = (proba[:, attack_index] >= cutoff).astype(int)
+        pred_idx = np.array([int(np.flatnonzero(classes == p)[0]) for p in predicted])
+    else:
+        pred_idx = np.argmax(proba, axis=1)
+        predicted = classes[pred_idx]
+    score = proba[np.arange(len(df)), pred_idx]
 
     return pd.DataFrame(
         {
             "source_row_id": df.index.astype(str),
-            "predicted_label": pred_idx,
-            "predicted_name": [label_map.get(str(p), str(p)) for p in pred_idx],
+            "predicted_label": predicted,
+            "predicted_name": [label_map.get(str(p), str(p)) for p in predicted],
             "score": score,
         }
     )

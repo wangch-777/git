@@ -2,7 +2,16 @@
 
 面向离线网络流量特征（CSV）的入侵检测与结果分析系统，提供数据导入、模型训练、批量检测、结果检索、模型评估与报告导出。算法实验与 Web 系统共用同一套预处理管道与模型包。
 
-> 本仓库为**项目骨架与实现框架**，尚非已完成的系统，也不包含未经实验验证的性能数字。
+> 已完成基础训练、CSV上传校验、后台检测、结果分页筛选及CSV导出，以及可视化和模型评估。模型实验页支持三种算法异步训练、阶段日志、结果对比和选用模型检测。
+
+## 从这里开始
+
+- Windows：环境配置完成后双击 `start-windows.cmd`，启动页面和后台。
+- 示例预测：双击 `predict-demo.cmd`，结果位于 `data/processed/demo_predictions.csv`。
+- 页面检测：数据管理 → 使用100条示例或上传CSV → 下一步：开始检测 → 查看结果和下载。启动脚本自动管理前端、API和一个Worker。
+- 初次安装、训练与 Mac 开发说明：[新手运行指南](docs/quickstart.md)。
+- 本次训练指标及限制：[基础实验记录](docs/baseline-results.md)。
+- 网页训练、实验管理和验收结果：[模型实验说明](docs/experiments.md)。
 
 ## 技术栈
 
@@ -35,16 +44,18 @@ intrusion-detection/
 ## 快速开始（开发）
 
 ```bash
-# 后端
-python -m venv .venv && .venv\Scripts\activate   # Windows
-pip install -r requirements.txt
-uvicorn backend.app.main:app --reload
+# Windows PowerShell，在项目根目录
+python -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r requirements-lock.txt
 
-# Worker（独立进程）
-python -m worker.worker
+# 基础模型与预测
+.\.venv\Scripts\python.exe -m ml.cli baseline
 
-# 前端
-cd frontend && npm install && npm run dev
+# 前端依赖安装后启动两项服务
+cd frontend
+npm.cmd ci --cache ../.npm-cache
+cd ..
+.\.venv\Scripts\python.exe scripts/dev.py
 ```
 
 ## 边界说明

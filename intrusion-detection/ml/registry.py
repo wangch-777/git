@@ -42,6 +42,8 @@ def save_model_pack(
         "threshold": threshold,
         "dependency_versions": {
             "python": platform.python_version(),
+            "scikit-learn": sklearn.__version__,
+            "joblib": joblib.__version__,
         },
         "saved_at": _now_iso(),
         **(metadata or {}),

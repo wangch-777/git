@@ -1,6 +1,6 @@
 {
-  "_note": "占位特征协议。正式实现必须以下载得到的 UNSW-NB15 实际文件表头核验后确定列名与类型，不能照抄。",
-  "source": "UNSW-NB15 官方训练/测试划分 CSV（待核验）",
+  "_note": "已核对下载镜像的45列：39个数值特征、3个类别特征、3个排除字段。镜像摘要见configs/dataset_source.json。",
+  "source": "UNSW-NB15 划分 CSV，来自公开镜像，未与官方二进制校验",
   "numeric": [
     "dur", "spkts", "dpkts", "sbytes", "dbytes", "rate",
     "sttl", "dttl", "sload", "dload", "sloss", "dloss",
@@ -8,7 +8,7 @@
     "dtcpb", "dwin", "tcprtt", "synack", "ackdat", "smean", "dmean",
     "trans_depth", "response_body_len", "ct_srv_src", "ct_state_ttl",
     "ct_dst_ltm", "ct_src_dport_ltm", "ct_dst_sport_ltm", "ct_dst_src_ltm",
-    "is_ftp_login", "ct_ftp_cmd", "ct_flw_http_mthd", "ct_src_ltm", "ct_srv_dst"
+    "is_ftp_login", "ct_ftp_cmd", "ct_flw_http_mthd", "ct_src_ltm", "ct_srv_dst", "is_sm_ips_ports"
   ],
   "categorical": ["proto", "service", "state"],
   "excluded": ["id", "label", "attack_cat"]
