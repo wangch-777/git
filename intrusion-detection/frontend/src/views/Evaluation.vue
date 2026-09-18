@@ -1,6 +1,8 @@
 <template>
   <section v-loading="loading">
     <h2>基础模型评估</h2>
+    <ErrorDiagnostics />
+    <h3>原测试集固定结果</h3>
     <p>使用带真实标签的 UNSW-NB15 原划分测试文件，独立于用户上传的检测任务。</p>
     <el-alert v-if="error" :title="error" type="error" :closable="false" />
     <template v-if="data">
@@ -26,6 +28,7 @@
 <script setup lang="ts">
 import { computed, onMounted, ref } from 'vue'
 import Chart from '../components/Chart.vue'
+import ErrorDiagnostics from '../components/ErrorDiagnostics.vue'
 import { http, errorText } from '../api/client'
 interface Evaluation {
   rows: number; threshold: number; limitations: string; confusion: number[][]; pr_curve: number[][];
