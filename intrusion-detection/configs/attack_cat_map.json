@@ -1,0 +1,13 @@
+{
+  "_note": "多分类 attack_cat 标签映射（名称须由实际数据核验后确定）。",
+  "Normal": "normal",
+  "Fuzzers": "fuzzers",
+  "Analysis": "analysis",
+  "Backdoors": "backdoors",
+  "DoS": "dos",
+  "Exploits": "exploits",
+  "Generic": "generic",
+  "Reconnaissance": "reconnaissance",
+  "Shellcode": "shellcode",
+  "Worms": "worms"
+}

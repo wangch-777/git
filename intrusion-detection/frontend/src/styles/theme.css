@@ -1,0 +1,219 @@
+/* ==========================================================================
+   网络入侵检测系统 · 设计系统
+   设计方向：暗色 SOC 面板 —— 深墨蓝底 + 青绿/紫渐变品牌色 + 玻璃质感卡片
+   参照 Jiro Build 的「暗色 + 渐变 + 玻璃」辨识度，落到安防工具的克制表达
+   ========================================================================== */
+
+:root {
+  /* —— 品牌与渐变 —— */
+  --id-accent: #2dd4bf;                 /* 主品牌 · 青绿 */
+  --id-accent-2: #8b7cff;               /* 辅品牌 · 紫 */
+  --id-gradient: linear-gradient(135deg, #2dd4bf 0%, #4f8df9 55%, #8b7cff 100%);
+  --id-gradient-soft: linear-gradient(135deg, rgba(45,212,191,.16), rgba(139,124,255,.16));
+
+  /* —— 语义色 —— */
+  --id-ok: #34d399;                     /* 正常 / 成功 */
+  --id-warn: #fbbf24;                   /* 告警 / 排队 */
+  --id-bad: #fb7185;                    /* 攻击 / 失败 */
+  --id-info: #60a5fa;
+
+  /* —— 字体 —— */
+  --id-font: 'Inter', 'HarmonyOS Sans SC', 'PingFang SC', 'Microsoft YaHei', system-ui, -apple-system, sans-serif;
+  --id-mono: 'JetBrains Mono', 'SFMono-Regular', 'Roboto Mono', Consolas, monospace;
+
+  /* —— 圆角 —— */
+  --id-radius: 16px;
+  --id-radius-sm: 10px;
+}
+
+html.dark {
+  /* —— 背景层级 —— */
+  --id-bg: #070b14;                                   /* 最深底 */
+  --id-bg-soft: #0b1220;                              /* 侧栏/分区 */
+  --id-surface: rgba(255, 255, 255, 0.026);           /* 卡片玻璃 */
+  --id-surface-strong: rgba(17, 26, 44, 0.72);        /* 悬浮层 */
+  --id-border: rgba(148, 163, 184, 0.14);
+  --id-border-strong: rgba(148, 163, 184, 0.26);
+
+  /* —— 文字 —— */
+  --id-text: #e9eff8;
+  --id-text-dim: #9aa7bd;
+  --id-text-faint: #64748b;
+
+  /* —— Element Plus 品牌色接管 —— */
+  --el-color-primary: #2dd4bf;
+  --el-color-primary-light-3: #5eead4;
+  --el-color-primary-light-5: #86f0e2;
+  --el-color-primary-light-7: #b8f8ef;
+  --el-color-primary-light-8: #d3fbf5;
+  --el-color-primary-light-9: rgba(45, 212, 191, 0.13);
+  --el-color-primary-dark-2: #14b8a6;
+
+  --el-color-success: #34d399;
+  --el-color-warning: #fbbf24;
+  --el-color-danger: #fb7185;
+  --el-color-error: #fb7185;
+  --el-color-info: #64748b;
+
+  /* —— Element Plus 背景/文字/边框 —— */
+  --el-bg-color: #0b1220;
+  --el-bg-color-overlay: #101a2e;
+  --el-bg-color-page: #070b14;
+  --el-fill-color-blank: rgba(255, 255, 255, 0.02);
+  --el-fill-color-light: rgba(148, 163, 184, 0.08);
+  --el-text-color-primary: #e9eff8;
+  --el-text-color-regular: #c4cee0;
+  --el-text-color-secondary: #9aa7bd;
+  --el-text-color-placeholder: #64748b;
+  --el-border-color: rgba(148, 163, 184, 0.24);
+  --el-border-color-light: rgba(148, 163, 184, 0.16);
+  --el-border-color-lighter: rgba(148, 163, 184, 0.10);
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
+/* —— 基础排版 —— */
+body {
+  margin: 0;
+  background: var(--id-bg);
+  color: var(--id-text);
+  font-family: var(--id-font);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+code, .mono {
+  font-family: var(--id-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+/* 标题层级统一（未使用 .page-title 的页面也保持一致） */
+h2 { font-size: 22px; font-weight: 700; letter-spacing: -0.01em; margin: 0 0 8px; }
+h3 { font-size: 16px; font-weight: 650; margin: 24px 0 12px; }
+
+/* 页面标题：带渐变短杠的层级感 */
+.page-title {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin: 0 0 6px;
+  color: var(--id-text);
+}
+.page-sub {
+  color: var(--id-text-dim);
+  line-height: 1.7;
+  margin: 0 0 20px;
+}
+
+/* —— 玻璃卡片 —— */
+.glass-card {
+  background: var(--id-surface);
+  border: 1px solid var(--id-border);
+  border-radius: var(--id-radius);
+  padding: 20px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.03) inset;
+}
+
+/* —— 指标卡 —— */
+.stat-card {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(120% 90% at 100% 0%, var(--id-accent-2), transparent 55%),
+    var(--id-surface);
+  border: 1px solid var(--id-border);
+  border-radius: var(--id-radius);
+  padding: 18px 20px;
+  transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease;
+}
+.stat-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--id-border-strong);
+  box-shadow: 0 12px 30px -14px rgba(45, 212, 191, 0.35);
+}
+.stat-card .stat-label {
+  font-size: 13px;
+  color: var(--id-text-dim);
+  letter-spacing: .02em;
+}
+.stat-card .stat-value {
+  margin-top: 8px;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  font-variant-numeric: tabular-nums;
+  font-family: var(--id-font);
+}
+.stat-card .stat-value.mono { font-family: var(--id-mono); }
+
+/* —— 渐变文字与渐变光晕 —— */
+.gradient-text {
+  background: var(--id-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.glow {
+  box-shadow: 0 0 0 1px rgba(45, 212, 191, 0.18), 0 8px 30px -8px rgba(45, 212, 191, 0.4);
+}
+
+/* —— 滚动条 —— */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.22);
+  border-radius: 8px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+::-webkit-scrollbar-thumb:hover { background-color: rgba(148, 163, 184, 0.4); }
+::-webkit-scrollbar-track { background: transparent; }
+
+/* —— 链接 —— */
+a { color: var(--id-accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* —— 表格 / 卡片容器在暗色下的柔和化 —— */
+.el-table { --el-table-border-color: var(--id-border); --el-table-header-bg-color: rgba(148,163,184,0.06); }
+.el-card { --el-card-bg-color: var(--id-surface); border: 1px solid var(--id-border); }
+.el-dialog { --el-dialog-bg-color: var(--id-bg-soft); border: 1px solid var(--id-border); border-radius: var(--id-radius); }
+.el-message-box { --el-bg-color: var(--id-bg-soft); }
+
+/* —— 全局按钮动态悬停（交互键抬升 + 光晕）—— */
+.el-button {
+  transition: transform .18s cubic-bezier(.22, 1, .36, 1), box-shadow .2s ease, background-color .2s ease, border-color .2s ease, color .2s ease;
+}
+.el-button--primary:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 10px 30px -12px rgba(45, 212, 191, 0.6);
+}
+.el-button:not(.is-text):not(.is-link):hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 24px -16px rgba(45, 212, 191, 0.4);
+}
+.el-button:active { transform: translateY(0) scale(.99); }
+
+/* —— 3D 卡片扫光（由 v-tilt 驱动 --mx / --my）—— */
+[data-tilt] {
+  position: relative;
+  overflow: hidden;
+}
+[data-tilt]::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: radial-gradient(520px circle at var(--mx, 50%) var(--my, 50%), rgba(255, 255, 255, 0.10), transparent 42%);
+  opacity: 0;
+  transition: opacity .35s ease;
+  pointer-events: none;
+  z-index: 1;
+}
+[data-tilt]:hover::after { opacity: 1; }
+
+/* 减少无意义的动效（无障碍：尊重 prefers-reduced-motion） */
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; }
+}

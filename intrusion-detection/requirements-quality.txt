@@ -1,0 +1,2 @@
+# 质量实验绘图；训练环境沿用 requirements-lock.txt。
+matplotlib==3.11.2

@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# 数据与产物（大文件不入库）
+data/raw/*
+data/processed/*
+artifacts/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!artifacts/.gitkeep
+
+# 模型二进制
+*.pt
+*.pkl
+*.joblib
+
+# 数据库
+*.db
+*.sqlite3
+ids.sqlite3
+
+# 前端
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/components.d.ts
+
+# 环境变量
+.env
+.env.*
+.npm-cache/
+.runtime/
+*.pack_joblib
+
+# 系统
+.DS_Store
+Thumbs.db
