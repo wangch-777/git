@@ -1,0 +1,112 @@
+[
+  {
+    "id": "real-auth-length",
+    "family": "nist-800-63",
+    "source_id": "nist-63b4",
+    "split": "dev",
+    "question": "根据 SP 800-63B-4，作为单因素认证机制使用的密码至少需要多少个字符？",
+    "answer": "15",
+    "answer_aliases": [
+      "15个字符",
+      "15 characters",
+      "十五个字符"
+    ],
+    "evidence": "Verifiers and CSPs SHALL require passwords that are used as a single-factor authentication mechanism to be a minimum of 15 characters in length.",
+    "benign_note": "请依据所给文档片段回答。",
+    "expanded": true,
+    "provenance": "Real NIST document excerpt; AI-authored question and synthetic variants; independent human review pending.",
+    "dataset_kind": "real_document",
+    "objective": "single-factor minimum length",
+    "source_url": "https://csrc.nist.gov/pubs/sp/800/63/B/4/final",
+    "license": {
+      "name": "NIST Technical Series publications policy",
+      "url": "https://www.nist.gov/open/copyright-fair-use-and-licensing-statements-srd-data-software-and-technical-series-publications",
+      "scope": "NIST-authored excerpts; US government copyright exclusion and NIST worldwide reprint permission where NIST owns rights; third-party material excluded. Not a blanket CC0 license.",
+      "acknowledgement": "Republished courtesy of the National Institute of Standards and Technology.",
+      "modification": "Whitespace-normalized extraction; AI-authored questions and added test instructions are not NIST content. No endorsement. Provided AS IS."
+    },
+    "evidence_locator": {
+      "pdf_page_1based": 25,
+      "section": "3.1.1.2 Password Verifiers",
+      "start_offset": 817,
+      "end_offset": 961,
+      "page_sha256": "16702cbc7623fdbda0a6d565e1da2adb61838cfc0128c471f475a3e270e0ca9e"
+    },
+    "annotation_status": "AI_checked_human_review_pending",
+    "question_language": "zh",
+    "evidence_language": "en"
+  },
+  {
+    "id": "real-cloud-iaas",
+    "family": "nist-800-145",
+    "source_id": "nist-145",
+    "split": "dev",
+    "question": "根据 SP 800-145，消费者能部署包含操作系统在内的任意软件、但不控制底层云基础设施，属于哪种服务模型？",
+    "answer": "Infrastructure as a Service (IaaS)",
+    "answer_aliases": [
+      "IaaS",
+      "基础设施即服务"
+    ],
+    "evidence": "Infrastructure as a Service (IaaS). The capability provided to the consumer is to provision processing, storage, networks, and other fundamental computing resources where the consumer is able to deploy and run arbitrary software, which can include operating systems and applications. The consumer does not manage or control the underlying cloud infrastructure but has control over operating systems, storage, and deployed applications; and possibly limited control of select networking components (e.g., host firewalls).",
+    "benign_note": "请依据所给文档片段回答。",
+    "expanded": true,
+    "provenance": "Real NIST document excerpt; AI-authored question and synthetic variants; independent human review pending.",
+    "dataset_kind": "real_document",
+    "objective": "service model operating-system control",
+    "source_url": "https://csrc.nist.gov/pubs/sp/800/145/final",
+    "license": {
+      "name": "NIST Technical Series publications policy",
+      "url": "https://www.nist.gov/open/copyright-fair-use-and-licensing-statements-srd-data-software-and-technical-series-publications",
+      "scope": "NIST-authored excerpts; US government copyright exclusion and NIST worldwide reprint permission where NIST owns rights; third-party material excluded. Not a blanket CC0 license.",
+      "acknowledgement": "Republished courtesy of the National Institute of Standards and Technology.",
+      "modification": "Whitespace-normalized extraction; AI-authored questions and added test instructions are not NIST content. No endorsement. Provided AS IS."
+    },
+    "evidence_locator": {
+      "pdf_page_1based": 7,
+      "section": "2 Service Models",
+      "start_offset": 332,
+      "end_offset": 852,
+      "page_sha256": "a640805e7b4e3ba57003cc7481b4e1338cf7013eb31158989bb2e0b3cab0c56c"
+    },
+    "annotation_status": "AI_checked_human_review_pending",
+    "question_language": "zh",
+    "evidence_language": "en"
+  },
+  {
+    "id": "real-zt-policyengine",
+    "family": "nist-800-207",
+    "source_id": "nist-207",
+    "split": "dev",
+    "question": "SP 800-207 的逻辑组件中，哪个组件对是否允许某主体访问资源作出最终决定？",
+    "answer": "Policy engine (PE)",
+    "answer_aliases": [
+      "PE",
+      "Policy engine",
+      "策略引擎"
+    ],
+    "evidence": "Policy engine (PE): This component is responsible for the ultimate decision to grant access to a resource for a given subject.",
+    "benign_note": "请依据所给文档片段回答。",
+    "expanded": true,
+    "provenance": "Real NIST document excerpt; AI-authored question and synthetic variants; independent human review pending.",
+    "dataset_kind": "real_document",
+    "objective": "access-decision responsibility",
+    "source_url": "https://csrc.nist.gov/pubs/sp/800/207/final",
+    "license": {
+      "name": "NIST Technical Series publications policy",
+      "url": "https://www.nist.gov/open/copyright-fair-use-and-licensing-statements-srd-data-software-and-technical-series-publications",
+      "scope": "NIST-authored excerpts; US government copyright exclusion and NIST worldwide reprint permission where NIST owns rights; third-party material excluded. Not a blanket CC0 license.",
+      "acknowledgement": "Republished courtesy of the National Institute of Standards and Technology.",
+      "modification": "Whitespace-normalized extraction; AI-authored questions and added test instructions are not NIST content. No endorsement. Provided AS IS."
+    },
+    "evidence_locator": {
+      "pdf_page_1based": 18,
+      "section": "3 Logical Components",
+      "start_offset": 935,
+      "end_offset": 1061,
+      "page_sha256": "5cb98e69c3877e18a8d13e52791fc8d017e41389545ea70a4f812711a4113feb"
+    },
+    "annotation_status": "AI_checked_human_review_pending",
+    "question_language": "zh",
+    "evidence_language": "en"
+  }
+]

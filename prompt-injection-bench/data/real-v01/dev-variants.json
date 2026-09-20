@@ -1,0 +1,1190 @@
+[
+  {
+    "case_id": "real-auth-length:clean_plain",
+    "parent_id": "real-auth-length",
+    "source_id": "nist-63b4",
+    "split": "dev",
+    "variant": "clean_plain",
+    "language": "clean",
+    "chunks_sha256": "4239406b067862dc495c21bcce7bbdf4e229d37496fb844cc18f45e02608c34a"
+  },
+  {
+    "case_id": "real-auth-length:clean_quote",
+    "parent_id": "real-auth-length",
+    "source_id": "nist-63b4",
+    "split": "dev",
+    "variant": "clean_quote",
+    "language": "clean",
+    "chunks_sha256": "4ac1f8b56341590fdaac6112dc85b559f56312438ba517ed569580004fd205c2"
+  },
+  {
+    "case_id": "real-auth-length:clean_embedded",
+    "parent_id": "real-auth-length",
+    "source_id": "nist-63b4",
+    "split": "dev",
+    "variant": "clean_embedded",
+    "language": "clean",
+    "chunks_sha256": "8968ac06e60d7dc7554a63573a9d05c26c3489fd901748025517e1883417f3ae"
+  },
+  {
+    "case_id": "real-auth-length:direct:zh",
+    "parent_id": "real-auth-length",
+    "source_id": "nist-63b4",
+    "split": "dev",
+    "variant": "direct",
+    "language": "zh",
+    "chunks_sha256": "c567f53973c06180e36da06246b4db8e3a225b6bd97a05f944024e52f9567415"
+  },
+  {
+    "case_id": "real-auth-length:direct:en",
+    "parent_id": "real-auth-length",
+    "source_id": "nist-63b4",
+    "split": "dev",
+    "variant": "direct",
+    "language": "en",
+    "chunks_sha256": "5f576ebbe185dfeae07dd28a7fc393436e78849c18da6cd925e85fad89904eb0"
+  },
+  {
+    "case_id": "real-auth-length:direct:mixed",
+    "parent_id": "real-auth-length",
+    "source_id": "nist-63b4",
+    "split": "dev",
+    "variant": "direct",
+    "language": "mixed",
+    "chunks_sha256": "7de13891e4541ad2cec6314e5556b053aa36e1448275423f4b019f6e34049ef2"
+  },
+  {
+    "case_id": "real-auth-length:authority:zh",
+    "parent_id": "real-auth-length",
+    "source_id": "nist-63b4",
+    "split": "dev",
+    "variant": "authority",
+    "language": "zh",
+    "chunks_sha256": "b028c32d2eb51543ad17cc4f89f528c742fa54c29acec01383db9681a5b579ee"
+  },
+  {
+    "case_id": "real-auth-length:authority:en",
+    "parent_id": "real-auth-length",
+    "source_id": "nist-63b4",
+    "split": "dev",
+    "variant": "authority",
+    "language": "en",
+    "chunks_sha256": "8ac524a83493e512746ab129ab84ab87df7850f0997f4a9e2370a4f535b7c1ea"
+  },
+  {
+    "case_id": "real-auth-length:authority:mixed",
+    "parent_id": "real-auth-length",
+    "source_id": "nist-63b4",
+    "split": "dev",
+    "variant": "authority",
+    "language": "mixed",
+    "chunks_sha256": "56c0b5773da938383c8ceb644927d6f9d6c33b9d060303b25b377d4ab204950a"
+  },
+  {
+    "case_id": "real-auth-length:correction:zh",
+    "parent_id": "real-auth-length",
+    "source_id": "nist-63b4",
+    "split": "dev",
+    "variant": "correction",
+    "language": "zh",
+    "chunks_sha256": "c2d03430ce26076e98f05fae76718ebab7a89f9d8b6bec1cc3b9317162fc9938"
+  },
+  {
+    "case_id": "real-auth-length:correction:en",
+    "parent_id": "real-auth-length",
+    "source_id": "nist-63b4",
+    "split": "dev",
+    "variant": "correction",
+    "language": "en",
+    "chunks_sha256": "9879e960a4bebad00f88bbd3fefd3b7dd5725b1c40a3f30de6a2c7ce00041431"
+  },
+  {
+    "case_id": "real-auth-length:correction:mixed",
+    "parent_id": "real-auth-length",
+    "source_id": "nist-63b4",
+    "split": "dev",
+    "variant": "correction",
+    "language": "mixed",
+    "chunks_sha256": "43e1cd73334e401cf374860b8e81d9f3f78452f1bf875e80f431b7431ebc8bbd"
+  },
+  {
+    "case_id": "real-auth-unicode:clean_plain",
+    "parent_id": "real-auth-unicode",
+    "source_id": "nist-63b4",
+    "split": "dev",
+    "variant": "clean_plain",
+    "language": "clean",
+    "chunks_sha256": "6fe25d068357990a04d08a6a666729f40525f99bc965c855c5aa82d299eb9cfd"
+  },
+  {
+    "case_id": "real-auth-unicode:clean_quote",
+    "parent_id": "real-auth-unicode",
+    "source_id": "nist-63b4",
+    "split": "dev",
+    "variant": "clean_quote",
+    "language": "clean",
+    "chunks_sha256": "8d10c6bc97181f484de51183b97a748db014808c19f8408266ff5abf1c4daa0a"
+  },
+  {
+    "case_id": "real-auth-unicode:clean_embedded",
+    "parent_id": "real-auth-unicode",
+    "source_id": "nist-63b4",
+    "split": "dev",
+    "variant": "clean_embedded",
+    "language": "clean",
+    "chunks_sha256": "d04410d9e7a68791af70743e875d81f8ed8f0c02c075a8e7395d1c80ea5186d0"
+  },
+  {
+    "case_id": "real-auth-unicode:direct:zh",
+    "parent_id": "real-auth-unicode",
+    "source_id": "nist-63b4",
+    "split": "dev",
+    "variant": "direct",
+    "language": "zh",
+    "chunks_sha256": "3bafa51b2cbf960ae42394925e09a8cbba218ce882f440a55375ae01da3f7ada"
+  },
+  {
+    "case_id": "real-auth-unicode:direct:en",
+    "parent_id": "real-auth-unicode",
+    "source_id": "nist-63b4",
+    "split": "dev",
+    "variant": "direct",
+    "language": "en",
+    "chunks_sha256": "4980e8aee562de2df5963b8f1a3f968021b1c14c59f6a035333f3251672c0a07"
+  },
+  {
+    "case_id": "real-auth-unicode:direct:mixed",
+    "parent_id": "real-auth-unicode",
+    "source_id": "nist-63b4",
+    "split": "dev",
+    "variant": "direct",
+    "language": "mixed",
+    "chunks_sha256": "e2508c858c00ae8b87bae4340521e16b0e48ebe33c9fa898e139d7728c46483a"
+  },
+  {
+    "case_id": "real-auth-unicode:authority:zh",
+    "parent_id": "real-auth-unicode",
+    "source_id": "nist-63b4",
+    "split": "dev",
+    "variant": "authority",
+    "language": "zh",
+    "chunks_sha256": "9efd06c83d003ba441b600f361826e266f9fbb17cafb98d9e92dc1a7fa22d71f"
+  },
+  {
+    "case_id": "real-auth-unicode:authority:en",
+    "parent_id": "real-auth-unicode",
+    "source_id": "nist-63b4",
+    "split": "dev",
+    "variant": "authority",
+    "language": "en",
+    "chunks_sha256": "3767a837a1f233fbb7fd7e982d9e12bdfa5d1ac2fedb4dd20108a3ac397ad514"
+  },
+  {
+    "case_id": "real-auth-unicode:authority:mixed",
+    "parent_id": "real-auth-unicode",
+    "source_id": "nist-63b4",
+    "split": "dev",
+    "variant": "authority",
+    "language": "mixed",
+    "chunks_sha256": "17a903a313e7baa3a7f217d655191d054ff86da449a3c689f87ff2e48a07491e"
+  },
+  {
+    "case_id": "real-auth-unicode:correction:zh",
+    "parent_id": "real-auth-unicode",
+    "source_id": "nist-63b4",
+    "split": "dev",
+    "variant": "correction",
+    "language": "zh",
+    "chunks_sha256": "24895ca1c35f440f7430ff01ea991580ef7f9c72ed10c766bc3cd29d438dade0"
+  },
+  {
+    "case_id": "real-auth-unicode:correction:en",
+    "parent_id": "real-auth-unicode",
+    "source_id": "nist-63b4",
+    "split": "dev",
+    "variant": "correction",
+    "language": "en",
+    "chunks_sha256": "50f99c5cebabe31d6f4300354c555945404b7c7a67addafccb67a96615ead3e4"
+  },
+  {
+    "case_id": "real-auth-unicode:correction:mixed",
+    "parent_id": "real-auth-unicode",
+    "source_id": "nist-63b4",
+    "split": "dev",
+    "variant": "correction",
+    "language": "mixed",
+    "chunks_sha256": "dd0041a3f721d2a74cd4c53af448bc1bfc726b9fa7fbc8c320d7413225a11542"
+  },
+  {
+    "case_id": "real-auth-manager:clean_plain",
+    "parent_id": "real-auth-manager",
+    "source_id": "nist-63b4",
+    "split": "dev",
+    "variant": "clean_plain",
+    "language": "clean",
+    "chunks_sha256": "425fac5b52187e9c65e70066e293b7ed32d4d56cb3301eb9ce2b7b0de0439d8f"
+  },
+  {
+    "case_id": "real-auth-manager:clean_quote",
+    "parent_id": "real-auth-manager",
+    "source_id": "nist-63b4",
+    "split": "dev",
+    "variant": "clean_quote",
+    "language": "clean",
+    "chunks_sha256": "6c6ade6bf6f0b28d43b0ab7acb6b4e1056f7f0e2374b8a03c61c1a9c18c76cd5"
+  },
+  {
+    "case_id": "real-auth-manager:clean_embedded",
+    "parent_id": "real-auth-manager",
+    "source_id": "nist-63b4",
+    "split": "dev",
+    "variant": "clean_embedded",
+    "language": "clean",
+    "chunks_sha256": "d32c2bdb5036418372aa655fe3a5a32d7815defc9c3b9e733025acb0d6e44173"
+  },
+  {
+    "case_id": "real-auth-manager:direct:zh",
+    "parent_id": "real-auth-manager",
+    "source_id": "nist-63b4",
+    "split": "dev",
+    "variant": "direct",
+    "language": "zh",
+    "chunks_sha256": "eab43793b25f0569f7fafddb4a36387d98e3501de8cfe37abad67797e45b23d0"
+  },
+  {
+    "case_id": "real-auth-manager:direct:en",
+    "parent_id": "real-auth-manager",
+    "source_id": "nist-63b4",
+    "split": "dev",
+    "variant": "direct",
+    "language": "en",
+    "chunks_sha256": "81699ac34f8eb5d801784f49c27373907c3997d5dee7e69265abe9431fe13e64"
+  },
+  {
+    "case_id": "real-auth-manager:direct:mixed",
+    "parent_id": "real-auth-manager",
+    "source_id": "nist-63b4",
+    "split": "dev",
+    "variant": "direct",
+    "language": "mixed",
+    "chunks_sha256": "39336c6452b14f26be196096830006b29cbdbbee86a91314a8da1e95f996fa53"
+  },
+  {
+    "case_id": "real-auth-manager:authority:zh",
+    "parent_id": "real-auth-manager",
+    "source_id": "nist-63b4",
+    "split": "dev",
+    "variant": "authority",
+    "language": "zh",
+    "chunks_sha256": "90649979a4e2a809215a6a878dea90960627657ffba8e4aca0dd09ef4df90580"
+  },
+  {
+    "case_id": "real-auth-manager:authority:en",
+    "parent_id": "real-auth-manager",
+    "source_id": "nist-63b4",
+    "split": "dev",
+    "variant": "authority",
+    "language": "en",
+    "chunks_sha256": "a12e3d38b06863f621b4e10f4af1da374615e7542080dc14693310f52bb9809d"
+  },
+  {
+    "case_id": "real-auth-manager:authority:mixed",
+    "parent_id": "real-auth-manager",
+    "source_id": "nist-63b4",
+    "split": "dev",
+    "variant": "authority",
+    "language": "mixed",
+    "chunks_sha256": "84fcc3895a96d149946b479d47716e3469696c2b45773fedb15e5ee58e3f4a36"
+  },
+  {
+    "case_id": "real-auth-manager:correction:zh",
+    "parent_id": "real-auth-manager",
+    "source_id": "nist-63b4",
+    "split": "dev",
+    "variant": "correction",
+    "language": "zh",
+    "chunks_sha256": "45102a61e7f69888079f7c2cdf87a59680837b2ac1bad53be80d4640c51adcad"
+  },
+  {
+    "case_id": "real-auth-manager:correction:en",
+    "parent_id": "real-auth-manager",
+    "source_id": "nist-63b4",
+    "split": "dev",
+    "variant": "correction",
+    "language": "en",
+    "chunks_sha256": "c1d2a205fcfee7b6475fdc8ebf09140b3ba094a29e16907a61eedf86e229ea01"
+  },
+  {
+    "case_id": "real-auth-manager:correction:mixed",
+    "parent_id": "real-auth-manager",
+    "source_id": "nist-63b4",
+    "split": "dev",
+    "variant": "correction",
+    "language": "mixed",
+    "chunks_sha256": "ec755fed381dc14f314c287013e6adb7262a1745f00191fe583761496624ebf9"
+  },
+  {
+    "case_id": "real-auth-email:clean_plain",
+    "parent_id": "real-auth-email",
+    "source_id": "nist-63b4",
+    "split": "dev",
+    "variant": "clean_plain",
+    "language": "clean",
+    "chunks_sha256": "404e103ec0b063b984d5249e0cbccd1166b22acc73fb3ca36625a36fd582f983"
+  },
+  {
+    "case_id": "real-auth-email:clean_quote",
+    "parent_id": "real-auth-email",
+    "source_id": "nist-63b4",
+    "split": "dev",
+    "variant": "clean_quote",
+    "language": "clean",
+    "chunks_sha256": "bb9c21678ed1342e09a274a69d6c845b2ee8281efd571868e05f67f17c95f81e"
+  },
+  {
+    "case_id": "real-auth-email:clean_embedded",
+    "parent_id": "real-auth-email",
+    "source_id": "nist-63b4",
+    "split": "dev",
+    "variant": "clean_embedded",
+    "language": "clean",
+    "chunks_sha256": "f0a6e86e940cefc49dc8d16818f66120d319989afeb84c7aa1293e2d90f08e56"
+  },
+  {
+    "case_id": "real-auth-email:direct:zh",
+    "parent_id": "real-auth-email",
+    "source_id": "nist-63b4",
+    "split": "dev",
+    "variant": "direct",
+    "language": "zh",
+    "chunks_sha256": "37a98fba945f08663226a4d9c6838cc8de319aa1ddaa60e4e1359eb68ae9ce7f"
+  },
+  {
+    "case_id": "real-auth-email:direct:en",
+    "parent_id": "real-auth-email",
+    "source_id": "nist-63b4",
+    "split": "dev",
+    "variant": "direct",
+    "language": "en",
+    "chunks_sha256": "53c57adeef718112699b2301dae294cd50f47d3d7e7e2f9d15f61d4235448035"
+  },
+  {
+    "case_id": "real-auth-email:direct:mixed",
+    "parent_id": "real-auth-email",
+    "source_id": "nist-63b4",
+    "split": "dev",
+    "variant": "direct",
+    "language": "mixed",
+    "chunks_sha256": "0033cd48055ada50f974d8d3d5d023c5dd136e4f3334a938154d19bd96cae614"
+  },
+  {
+    "case_id": "real-auth-email:authority:zh",
+    "parent_id": "real-auth-email",
+    "source_id": "nist-63b4",
+    "split": "dev",
+    "variant": "authority",
+    "language": "zh",
+    "chunks_sha256": "7699224fd38fd0c7fb514eea0be508b773d428c885db56e72aaee5e41e153ca3"
+  },
+  {
+    "case_id": "real-auth-email:authority:en",
+    "parent_id": "real-auth-email",
+    "source_id": "nist-63b4",
+    "split": "dev",
+    "variant": "authority",
+    "language": "en",
+    "chunks_sha256": "09c87713ab97546297b67a2c95f885aa07159e47f07b769c5b8fc5bfe82fc590"
+  },
+  {
+    "case_id": "real-auth-email:authority:mixed",
+    "parent_id": "real-auth-email",
+    "source_id": "nist-63b4",
+    "split": "dev",
+    "variant": "authority",
+    "language": "mixed",
+    "chunks_sha256": "bb69c3f3a1a7914c64f60b778702d1a6902d29650aec381e29ede294f0ad200f"
+  },
+  {
+    "case_id": "real-auth-email:correction:zh",
+    "parent_id": "real-auth-email",
+    "source_id": "nist-63b4",
+    "split": "dev",
+    "variant": "correction",
+    "language": "zh",
+    "chunks_sha256": "1a988ed09aa0d4c75fa14c515bb010288bd83d7bc67ffb4f584d81941dea2a7e"
+  },
+  {
+    "case_id": "real-auth-email:correction:en",
+    "parent_id": "real-auth-email",
+    "source_id": "nist-63b4",
+    "split": "dev",
+    "variant": "correction",
+    "language": "en",
+    "chunks_sha256": "d4be64e8d3fd621282635a3db7c302df054c83330b037e88c35131f20914cc3d"
+  },
+  {
+    "case_id": "real-auth-email:correction:mixed",
+    "parent_id": "real-auth-email",
+    "source_id": "nist-63b4",
+    "split": "dev",
+    "variant": "correction",
+    "language": "mixed",
+    "chunks_sha256": "8d06b7d5a49facd2e623d0e670cfc0f1cc2f402ae09615bad62e844388491ea6"
+  },
+  {
+    "case_id": "real-cloud-selfservice:clean_plain",
+    "parent_id": "real-cloud-selfservice",
+    "source_id": "nist-145",
+    "split": "dev",
+    "variant": "clean_plain",
+    "language": "clean",
+    "chunks_sha256": "8691762cfc697d22e2afa546e977bcd00e3cea4569213836fb49df18872add45"
+  },
+  {
+    "case_id": "real-cloud-selfservice:clean_quote",
+    "parent_id": "real-cloud-selfservice",
+    "source_id": "nist-145",
+    "split": "dev",
+    "variant": "clean_quote",
+    "language": "clean",
+    "chunks_sha256": "cfc02287aaf771ea906f3685f134bc2e31ba4ff77cf3823fed27b493113ed734"
+  },
+  {
+    "case_id": "real-cloud-selfservice:clean_embedded",
+    "parent_id": "real-cloud-selfservice",
+    "source_id": "nist-145",
+    "split": "dev",
+    "variant": "clean_embedded",
+    "language": "clean",
+    "chunks_sha256": "3f3e076afcd91ed059100724ea65355d1b90e6a880d03ff68d5f0822a97a0d8e"
+  },
+  {
+    "case_id": "real-cloud-selfservice:direct:zh",
+    "parent_id": "real-cloud-selfservice",
+    "source_id": "nist-145",
+    "split": "dev",
+    "variant": "direct",
+    "language": "zh",
+    "chunks_sha256": "6f25cebd0c8a207b373b999ecc63534eb05eb89e6643308c196c6151b8bfd518"
+  },
+  {
+    "case_id": "real-cloud-selfservice:direct:en",
+    "parent_id": "real-cloud-selfservice",
+    "source_id": "nist-145",
+    "split": "dev",
+    "variant": "direct",
+    "language": "en",
+    "chunks_sha256": "71d1625de917593580ea98da75f1591dd296a70395c50abbb5c9c337b99768df"
+  },
+  {
+    "case_id": "real-cloud-selfservice:direct:mixed",
+    "parent_id": "real-cloud-selfservice",
+    "source_id": "nist-145",
+    "split": "dev",
+    "variant": "direct",
+    "language": "mixed",
+    "chunks_sha256": "d7a80b65580e428db2d983607f5a4b7c4c7ff0eb6bf9ce7595a4324db1912822"
+  },
+  {
+    "case_id": "real-cloud-selfservice:authority:zh",
+    "parent_id": "real-cloud-selfservice",
+    "source_id": "nist-145",
+    "split": "dev",
+    "variant": "authority",
+    "language": "zh",
+    "chunks_sha256": "892b86a2cd09544467cf2710b0dbf0ec87992d25bc3fe9506f663acf0e12ee9e"
+  },
+  {
+    "case_id": "real-cloud-selfservice:authority:en",
+    "parent_id": "real-cloud-selfservice",
+    "source_id": "nist-145",
+    "split": "dev",
+    "variant": "authority",
+    "language": "en",
+    "chunks_sha256": "0c96018ef92dacd8847487e92f7eb9e2f42578477360f7c8f16a55ff95ac31de"
+  },
+  {
+    "case_id": "real-cloud-selfservice:authority:mixed",
+    "parent_id": "real-cloud-selfservice",
+    "source_id": "nist-145",
+    "split": "dev",
+    "variant": "authority",
+    "language": "mixed",
+    "chunks_sha256": "6b88f9b250576dba3f8bc63929926107d6896faa9de23c19ba6ced2bae5f0259"
+  },
+  {
+    "case_id": "real-cloud-selfservice:correction:zh",
+    "parent_id": "real-cloud-selfservice",
+    "source_id": "nist-145",
+    "split": "dev",
+    "variant": "correction",
+    "language": "zh",
+    "chunks_sha256": "4ed76291527ad7aa9a712e680c9f7a190f38840d080318b447558d841901d5b7"
+  },
+  {
+    "case_id": "real-cloud-selfservice:correction:en",
+    "parent_id": "real-cloud-selfservice",
+    "source_id": "nist-145",
+    "split": "dev",
+    "variant": "correction",
+    "language": "en",
+    "chunks_sha256": "f0cde9b9b5e70ff7e145e6d6ed59019993f297cf56f50e3086edc343b0c1efc6"
+  },
+  {
+    "case_id": "real-cloud-selfservice:correction:mixed",
+    "parent_id": "real-cloud-selfservice",
+    "source_id": "nist-145",
+    "split": "dev",
+    "variant": "correction",
+    "language": "mixed",
+    "chunks_sha256": "95bec35fe2499e7e4631a645ae9617585e4cf69ba21178ebe27a5c63e1fbfec5"
+  },
+  {
+    "case_id": "real-cloud-metering:clean_plain",
+    "parent_id": "real-cloud-metering",
+    "source_id": "nist-145",
+    "split": "dev",
+    "variant": "clean_plain",
+    "language": "clean",
+    "chunks_sha256": "709e13842da7c3eaa7e7dbf4745e8ad2783da9058d1c132864abd3ace56d0cf1"
+  },
+  {
+    "case_id": "real-cloud-metering:clean_quote",
+    "parent_id": "real-cloud-metering",
+    "source_id": "nist-145",
+    "split": "dev",
+    "variant": "clean_quote",
+    "language": "clean",
+    "chunks_sha256": "440cb9dce5cf417491b524833d2c1a58a0fc26764fcf619e14d1f6846c8f9941"
+  },
+  {
+    "case_id": "real-cloud-metering:clean_embedded",
+    "parent_id": "real-cloud-metering",
+    "source_id": "nist-145",
+    "split": "dev",
+    "variant": "clean_embedded",
+    "language": "clean",
+    "chunks_sha256": "aa39a127c0bd27b79c9471e361e388fa8d3c3deb2c2ea188bce4c41151ed4654"
+  },
+  {
+    "case_id": "real-cloud-metering:direct:zh",
+    "parent_id": "real-cloud-metering",
+    "source_id": "nist-145",
+    "split": "dev",
+    "variant": "direct",
+    "language": "zh",
+    "chunks_sha256": "7a55307e43fff87cc06b06f9cc8e1b6b6b9ecb36a9ec20f3f508880702ac9b86"
+  },
+  {
+    "case_id": "real-cloud-metering:direct:en",
+    "parent_id": "real-cloud-metering",
+    "source_id": "nist-145",
+    "split": "dev",
+    "variant": "direct",
+    "language": "en",
+    "chunks_sha256": "3ecadea28d5345dd185ec5d93ed963f76d9464ae67bc001c76c190d6857bf2c1"
+  },
+  {
+    "case_id": "real-cloud-metering:direct:mixed",
+    "parent_id": "real-cloud-metering",
+    "source_id": "nist-145",
+    "split": "dev",
+    "variant": "direct",
+    "language": "mixed",
+    "chunks_sha256": "4095c06b55405ce8ad52e6bb767ebd4818d757cf3cf2205091bdc3ce3ea469d8"
+  },
+  {
+    "case_id": "real-cloud-metering:authority:zh",
+    "parent_id": "real-cloud-metering",
+    "source_id": "nist-145",
+    "split": "dev",
+    "variant": "authority",
+    "language": "zh",
+    "chunks_sha256": "fe3a22e57441d472a49cc83124efdc16416807dc64accd7850937295464f1ac6"
+  },
+  {
+    "case_id": "real-cloud-metering:authority:en",
+    "parent_id": "real-cloud-metering",
+    "source_id": "nist-145",
+    "split": "dev",
+    "variant": "authority",
+    "language": "en",
+    "chunks_sha256": "f0d8eb98422accf9484d44aec24e4261cad3b7ee6bd3f332bd8956a6e020db46"
+  },
+  {
+    "case_id": "real-cloud-metering:authority:mixed",
+    "parent_id": "real-cloud-metering",
+    "source_id": "nist-145",
+    "split": "dev",
+    "variant": "authority",
+    "language": "mixed",
+    "chunks_sha256": "45b3bdf6942bf55908ae4d4126ba1fbd2e0a9c11032ebd36b73084e192627f15"
+  },
+  {
+    "case_id": "real-cloud-metering:correction:zh",
+    "parent_id": "real-cloud-metering",
+    "source_id": "nist-145",
+    "split": "dev",
+    "variant": "correction",
+    "language": "zh",
+    "chunks_sha256": "0b648e39fbe9725d3700228b7dc825a6fc75deae81f0bb81d64ff641ebfa9aa0"
+  },
+  {
+    "case_id": "real-cloud-metering:correction:en",
+    "parent_id": "real-cloud-metering",
+    "source_id": "nist-145",
+    "split": "dev",
+    "variant": "correction",
+    "language": "en",
+    "chunks_sha256": "b3725e6bd5b1667918867ecb43768dce332f119911bb8c77a321808e14e3223e"
+  },
+  {
+    "case_id": "real-cloud-metering:correction:mixed",
+    "parent_id": "real-cloud-metering",
+    "source_id": "nist-145",
+    "split": "dev",
+    "variant": "correction",
+    "language": "mixed",
+    "chunks_sha256": "8ecc11009bbf7354abe9d5405dab32071b5c5eec8cf07ba4eb3aef3c1c1e4b43"
+  },
+  {
+    "case_id": "real-cloud-iaas:clean_plain",
+    "parent_id": "real-cloud-iaas",
+    "source_id": "nist-145",
+    "split": "dev",
+    "variant": "clean_plain",
+    "language": "clean",
+    "chunks_sha256": "bde670dd9afc44f8c57dd10445fa4506b885098f16613495bd4213e2890df090"
+  },
+  {
+    "case_id": "real-cloud-iaas:clean_quote",
+    "parent_id": "real-cloud-iaas",
+    "source_id": "nist-145",
+    "split": "dev",
+    "variant": "clean_quote",
+    "language": "clean",
+    "chunks_sha256": "221011e48730b52e3d168ff95661af2b3b1cd1aba576362cdc07ff289c3b1fda"
+  },
+  {
+    "case_id": "real-cloud-iaas:clean_embedded",
+    "parent_id": "real-cloud-iaas",
+    "source_id": "nist-145",
+    "split": "dev",
+    "variant": "clean_embedded",
+    "language": "clean",
+    "chunks_sha256": "c530247eb68c260e6c6f0a4bbb1be1ae749effcb57ae066dccb0e6206097b178"
+  },
+  {
+    "case_id": "real-cloud-iaas:direct:zh",
+    "parent_id": "real-cloud-iaas",
+    "source_id": "nist-145",
+    "split": "dev",
+    "variant": "direct",
+    "language": "zh",
+    "chunks_sha256": "d52d35a789363127daab1e92667034d74d1b2de25946353f356299ec434b774c"
+  },
+  {
+    "case_id": "real-cloud-iaas:direct:en",
+    "parent_id": "real-cloud-iaas",
+    "source_id": "nist-145",
+    "split": "dev",
+    "variant": "direct",
+    "language": "en",
+    "chunks_sha256": "60b516a30e8ff448c136ef10631ab7b3146c691fb87dc0a0174abd513aa79b75"
+  },
+  {
+    "case_id": "real-cloud-iaas:direct:mixed",
+    "parent_id": "real-cloud-iaas",
+    "source_id": "nist-145",
+    "split": "dev",
+    "variant": "direct",
+    "language": "mixed",
+    "chunks_sha256": "a6096a59d1e1631b5c53ffd1b50d8c60cbb2f5b1ffe8e82c53c25af9e6d68986"
+  },
+  {
+    "case_id": "real-cloud-iaas:authority:zh",
+    "parent_id": "real-cloud-iaas",
+    "source_id": "nist-145",
+    "split": "dev",
+    "variant": "authority",
+    "language": "zh",
+    "chunks_sha256": "3421bd91e2d8079b9af9fb203bc4a4472496195c623f805becc1eb484c91eb1d"
+  },
+  {
+    "case_id": "real-cloud-iaas:authority:en",
+    "parent_id": "real-cloud-iaas",
+    "source_id": "nist-145",
+    "split": "dev",
+    "variant": "authority",
+    "language": "en",
+    "chunks_sha256": "ce75eabc1464e9b0a0a80f46156ac6f01ef7b309623fcd7848c14982e5750544"
+  },
+  {
+    "case_id": "real-cloud-iaas:authority:mixed",
+    "parent_id": "real-cloud-iaas",
+    "source_id": "nist-145",
+    "split": "dev",
+    "variant": "authority",
+    "language": "mixed",
+    "chunks_sha256": "f9009d00f33345fd426f1901a128739bb2fdf3f315364d2f4bcc760685c749b7"
+  },
+  {
+    "case_id": "real-cloud-iaas:correction:zh",
+    "parent_id": "real-cloud-iaas",
+    "source_id": "nist-145",
+    "split": "dev",
+    "variant": "correction",
+    "language": "zh",
+    "chunks_sha256": "dbdf3e030c9e92f47953bda27a78cf1d3271df78468af96be9b84a9cc0775cb4"
+  },
+  {
+    "case_id": "real-cloud-iaas:correction:en",
+    "parent_id": "real-cloud-iaas",
+    "source_id": "nist-145",
+    "split": "dev",
+    "variant": "correction",
+    "language": "en",
+    "chunks_sha256": "82e506715667c1600b723d5be2f1150b5df85e5b6bc91b1a270545e6e293f535"
+  },
+  {
+    "case_id": "real-cloud-iaas:correction:mixed",
+    "parent_id": "real-cloud-iaas",
+    "source_id": "nist-145",
+    "split": "dev",
+    "variant": "correction",
+    "language": "mixed",
+    "chunks_sha256": "c3264cbea39b8428904fa07452a16087fa9e03233c5b91dccd09d59d08783741"
+  },
+  {
+    "case_id": "real-cloud-community:clean_plain",
+    "parent_id": "real-cloud-community",
+    "source_id": "nist-145",
+    "split": "dev",
+    "variant": "clean_plain",
+    "language": "clean",
+    "chunks_sha256": "161262f269d0bb26fb85165f79f5d89187f6257aec8a774dc1099a5a0af3805b"
+  },
+  {
+    "case_id": "real-cloud-community:clean_quote",
+    "parent_id": "real-cloud-community",
+    "source_id": "nist-145",
+    "split": "dev",
+    "variant": "clean_quote",
+    "language": "clean",
+    "chunks_sha256": "0b0e308bd3b4f4d35bf5c9ca335a3475870d59823d018bae0acc55c42788eaa8"
+  },
+  {
+    "case_id": "real-cloud-community:clean_embedded",
+    "parent_id": "real-cloud-community",
+    "source_id": "nist-145",
+    "split": "dev",
+    "variant": "clean_embedded",
+    "language": "clean",
+    "chunks_sha256": "298b89352f9a35cb3a1d966643a9dc3c63ecfd8e40958f28943b8489f945cc6b"
+  },
+  {
+    "case_id": "real-cloud-community:direct:zh",
+    "parent_id": "real-cloud-community",
+    "source_id": "nist-145",
+    "split": "dev",
+    "variant": "direct",
+    "language": "zh",
+    "chunks_sha256": "38b2a09cef94c09bfebc10df10642208e77cb5534bde0c8d20c29cecef116d6d"
+  },
+  {
+    "case_id": "real-cloud-community:direct:en",
+    "parent_id": "real-cloud-community",
+    "source_id": "nist-145",
+    "split": "dev",
+    "variant": "direct",
+    "language": "en",
+    "chunks_sha256": "e0cea740edaf95ac351c4234577fc9ca0facc007eafaa531630721ea0ae65819"
+  },
+  {
+    "case_id": "real-cloud-community:direct:mixed",
+    "parent_id": "real-cloud-community",
+    "source_id": "nist-145",
+    "split": "dev",
+    "variant": "direct",
+    "language": "mixed",
+    "chunks_sha256": "dfa9a5fc7ea5a8ada84e2e731f8a1ab7ed803683025cf63bf5c5f42298f88a6b"
+  },
+  {
+    "case_id": "real-cloud-community:authority:zh",
+    "parent_id": "real-cloud-community",
+    "source_id": "nist-145",
+    "split": "dev",
+    "variant": "authority",
+    "language": "zh",
+    "chunks_sha256": "3404da1b7ba5aee4a51c8a34d1e2060c33f7d8763355fd1278d7ceb2d52c893b"
+  },
+  {
+    "case_id": "real-cloud-community:authority:en",
+    "parent_id": "real-cloud-community",
+    "source_id": "nist-145",
+    "split": "dev",
+    "variant": "authority",
+    "language": "en",
+    "chunks_sha256": "eea56f715e1f5900807ee2f9a92ec05a5b9be02bd9c0428ddcbc8016a5270b31"
+  },
+  {
+    "case_id": "real-cloud-community:authority:mixed",
+    "parent_id": "real-cloud-community",
+    "source_id": "nist-145",
+    "split": "dev",
+    "variant": "authority",
+    "language": "mixed",
+    "chunks_sha256": "b60c465d6a75583e384c3353edecd70e3651ffd5810c5460a17120827fedbe8b"
+  },
+  {
+    "case_id": "real-cloud-community:correction:zh",
+    "parent_id": "real-cloud-community",
+    "source_id": "nist-145",
+    "split": "dev",
+    "variant": "correction",
+    "language": "zh",
+    "chunks_sha256": "c87050b9cdc59b1d5bdf7fcde3cac286a6b4d38abd4862650f5eaf854e3ed60f"
+  },
+  {
+    "case_id": "real-cloud-community:correction:en",
+    "parent_id": "real-cloud-community",
+    "source_id": "nist-145",
+    "split": "dev",
+    "variant": "correction",
+    "language": "en",
+    "chunks_sha256": "f0ebbf0a1e650ebf2ee8793facebdc298c640c64e12c2b2f885e25b803ee401d"
+  },
+  {
+    "case_id": "real-cloud-community:correction:mixed",
+    "parent_id": "real-cloud-community",
+    "source_id": "nist-145",
+    "split": "dev",
+    "variant": "correction",
+    "language": "mixed",
+    "chunks_sha256": "2117499a43d896e4f6a9389d9584788b420fa57733613856430d774d4dd2e80a"
+  },
+  {
+    "case_id": "real-zt-session:clean_plain",
+    "parent_id": "real-zt-session",
+    "source_id": "nist-207",
+    "split": "dev",
+    "variant": "clean_plain",
+    "language": "clean",
+    "chunks_sha256": "e119e268fef1228d7e6796b29c1c32725de23dff2f101153f04d03ed012333d3"
+  },
+  {
+    "case_id": "real-zt-session:clean_quote",
+    "parent_id": "real-zt-session",
+    "source_id": "nist-207",
+    "split": "dev",
+    "variant": "clean_quote",
+    "language": "clean",
+    "chunks_sha256": "e5a7cfc7570ea07c0003289a64016b5f18b986fb5ef8ae87bb0969615340a415"
+  },
+  {
+    "case_id": "real-zt-session:clean_embedded",
+    "parent_id": "real-zt-session",
+    "source_id": "nist-207",
+    "split": "dev",
+    "variant": "clean_embedded",
+    "language": "clean",
+    "chunks_sha256": "aeb51650eb120b11501255f7271a132296fad8f7295e099b32de923c35eec1ce"
+  },
+  {
+    "case_id": "real-zt-session:direct:zh",
+    "parent_id": "real-zt-session",
+    "source_id": "nist-207",
+    "split": "dev",
+    "variant": "direct",
+    "language": "zh",
+    "chunks_sha256": "1cada29b95b11b22515541aac7d1f6a522736ca5ebdce4167418659477840e1a"
+  },
+  {
+    "case_id": "real-zt-session:direct:en",
+    "parent_id": "real-zt-session",
+    "source_id": "nist-207",
+    "split": "dev",
+    "variant": "direct",
+    "language": "en",
+    "chunks_sha256": "9aeee4c9ef88d6f1cbbb09af665dd43ccf0346af8b535dab3f7fdec4193e57b5"
+  },
+  {
+    "case_id": "real-zt-session:direct:mixed",
+    "parent_id": "real-zt-session",
+    "source_id": "nist-207",
+    "split": "dev",
+    "variant": "direct",
+    "language": "mixed",
+    "chunks_sha256": "6d9179780f9c5d15efb5cf31f00b2cfa97b1ab7ad8507d53b1304de091949662"
+  },
+  {
+    "case_id": "real-zt-session:authority:zh",
+    "parent_id": "real-zt-session",
+    "source_id": "nist-207",
+    "split": "dev",
+    "variant": "authority",
+    "language": "zh",
+    "chunks_sha256": "8c36b0042c78981c4bce521f608e91960dd6ee38dc57418bf562e4b286c58967"
+  },
+  {
+    "case_id": "real-zt-session:authority:en",
+    "parent_id": "real-zt-session",
+    "source_id": "nist-207",
+    "split": "dev",
+    "variant": "authority",
+    "language": "en",
+    "chunks_sha256": "b6bc56cf3b6eaabefd214873795eca580eb25cb2dee3c69defe08be115d558ce"
+  },
+  {
+    "case_id": "real-zt-session:authority:mixed",
+    "parent_id": "real-zt-session",
+    "source_id": "nist-207",
+    "split": "dev",
+    "variant": "authority",
+    "language": "mixed",
+    "chunks_sha256": "3ff8a864f9e885d52e303c71b0b02dc66c4a2c2eb2be0ffaea251a9215720464"
+  },
+  {
+    "case_id": "real-zt-session:correction:zh",
+    "parent_id": "real-zt-session",
+    "source_id": "nist-207",
+    "split": "dev",
+    "variant": "correction",
+    "language": "zh",
+    "chunks_sha256": "066c9e6a6ba5705f433b02b8cf6a14c8e384818a9458a1aee01dda0697bcecdb"
+  },
+  {
+    "case_id": "real-zt-session:correction:en",
+    "parent_id": "real-zt-session",
+    "source_id": "nist-207",
+    "split": "dev",
+    "variant": "correction",
+    "language": "en",
+    "chunks_sha256": "64308f56d4f46aa1afc493598818edb0e39d163b0ef4a0d1d2462bc74028ffe5"
+  },
+  {
+    "case_id": "real-zt-session:correction:mixed",
+    "parent_id": "real-zt-session",
+    "source_id": "nist-207",
+    "split": "dev",
+    "variant": "correction",
+    "language": "mixed",
+    "chunks_sha256": "796c9939bb2ba7ff179099417173c7ffbdf982d4fbea6ea796ccd0dd314cc865"
+  },
+  {
+    "case_id": "real-zt-policyengine:clean_plain",
+    "parent_id": "real-zt-policyengine",
+    "source_id": "nist-207",
+    "split": "dev",
+    "variant": "clean_plain",
+    "language": "clean",
+    "chunks_sha256": "3a13c794745614c1843ec64333a518339ec320809a3d167d52752aeaa3fd4457"
+  },
+  {
+    "case_id": "real-zt-policyengine:clean_quote",
+    "parent_id": "real-zt-policyengine",
+    "source_id": "nist-207",
+    "split": "dev",
+    "variant": "clean_quote",
+    "language": "clean",
+    "chunks_sha256": "aa8fc6eeaca8309d392906eb5bbc9d99faaf4216a0d0d79285ceedd2e9ca1198"
+  },
+  {
+    "case_id": "real-zt-policyengine:clean_embedded",
+    "parent_id": "real-zt-policyengine",
+    "source_id": "nist-207",
+    "split": "dev",
+    "variant": "clean_embedded",
+    "language": "clean",
+    "chunks_sha256": "e8a633dc5a3f75e60da711fde4b75d1182bb078f193b83ad689728e76416f68e"
+  },
+  {
+    "case_id": "real-zt-policyengine:direct:zh",
+    "parent_id": "real-zt-policyengine",
+    "source_id": "nist-207",
+    "split": "dev",
+    "variant": "direct",
+    "language": "zh",
+    "chunks_sha256": "a7c3b3f338c37553a549c0872670474522eb6256a28e6f22d17028a935c66151"
+  },
+  {
+    "case_id": "real-zt-policyengine:direct:en",
+    "parent_id": "real-zt-policyengine",
+    "source_id": "nist-207",
+    "split": "dev",
+    "variant": "direct",
+    "language": "en",
+    "chunks_sha256": "f72e9acf512319231d19f27de3adcc82f2b278936f184c9768bb9368db39a278"
+  },
+  {
+    "case_id": "real-zt-policyengine:direct:mixed",
+    "parent_id": "real-zt-policyengine",
+    "source_id": "nist-207",
+    "split": "dev",
+    "variant": "direct",
+    "language": "mixed",
+    "chunks_sha256": "7b1819d1104944233e1bdbe6f39c3b70d197a704d163aace955986f25d0d2a10"
+  },
+  {
+    "case_id": "real-zt-policyengine:authority:zh",
+    "parent_id": "real-zt-policyengine",
+    "source_id": "nist-207",
+    "split": "dev",
+    "variant": "authority",
+    "language": "zh",
+    "chunks_sha256": "e6dc60bbaa1cdd9be2a3b4566e474b001c3c0f25e6ad53beafb1e2a07038bbf9"
+  },
+  {
+    "case_id": "real-zt-policyengine:authority:en",
+    "parent_id": "real-zt-policyengine",
+    "source_id": "nist-207",
+    "split": "dev",
+    "variant": "authority",
+    "language": "en",
+    "chunks_sha256": "a0610b435506005677a037ceac4d6052145780dcbfab192f7ab1d48269e49a16"
+  },
+  {
+    "case_id": "real-zt-policyengine:authority:mixed",
+    "parent_id": "real-zt-policyengine",
+    "source_id": "nist-207",
+    "split": "dev",
+    "variant": "authority",
+    "language": "mixed",
+    "chunks_sha256": "e8644536131317e90b53d0f9ed0afa1238772c86fd80ca90e26a69bbb749a66f"
+  },
+  {
+    "case_id": "real-zt-policyengine:correction:zh",
+    "parent_id": "real-zt-policyengine",
+    "source_id": "nist-207",
+    "split": "dev",
+    "variant": "correction",
+    "language": "zh",
+    "chunks_sha256": "9f3c4f255259a918dd2f65541ee192195175af179b01ab7bca718acabec63300"
+  },
+  {
+    "case_id": "real-zt-policyengine:correction:en",
+    "parent_id": "real-zt-policyengine",
+    "source_id": "nist-207",
+    "split": "dev",
+    "variant": "correction",
+    "language": "en",
+    "chunks_sha256": "5ac23f36df6c9aa01dcfa7ba67f4e39ab2e7fdc88f27f17848c1c0b43f886226"
+  },
+  {
+    "case_id": "real-zt-policyengine:correction:mixed",
+    "parent_id": "real-zt-policyengine",
+    "source_id": "nist-207",
+    "split": "dev",
+    "variant": "correction",
+    "language": "mixed",
+    "chunks_sha256": "cc215bf8ce0596f4e07ed7669e1a12f51610b534f3d83967fa12c7efa79cb35c"
+  },
+  {
+    "case_id": "real-zt-enforcement:clean_plain",
+    "parent_id": "real-zt-enforcement",
+    "source_id": "nist-207",
+    "split": "dev",
+    "variant": "clean_plain",
+    "language": "clean",
+    "chunks_sha256": "9fd66a8ffb1d5187cb5cba2c64b98a846c0830479ceda0977629649bebc87f32"
+  },
+  {
+    "case_id": "real-zt-enforcement:clean_quote",
+    "parent_id": "real-zt-enforcement",
+    "source_id": "nist-207",
+    "split": "dev",
+    "variant": "clean_quote",
+    "language": "clean",
+    "chunks_sha256": "84edd81cd787b7d01c2cd04c0b15a841f670b5b3091d8d073ea4f87247037574"
+  },
+  {
+    "case_id": "real-zt-enforcement:clean_embedded",
+    "parent_id": "real-zt-enforcement",
+    "source_id": "nist-207",
+    "split": "dev",
+    "variant": "clean_embedded",
+    "language": "clean",
+    "chunks_sha256": "25f9f4978019894fc5c2d8a18e990e4a409751a4000ce3eb05104ff278486ac6"
+  },
+  {
+    "case_id": "real-zt-enforcement:direct:zh",
+    "parent_id": "real-zt-enforcement",
+    "source_id": "nist-207",
+    "split": "dev",
+    "variant": "direct",
+    "language": "zh",
+    "chunks_sha256": "9b42aaa3bc8de75c9854c4c56cd5d120332d087bff167a6349fd8615ca1c1c8b"
+  },
+  {
+    "case_id": "real-zt-enforcement:direct:en",
+    "parent_id": "real-zt-enforcement",
+    "source_id": "nist-207",
+    "split": "dev",
+    "variant": "direct",
+    "language": "en",
+    "chunks_sha256": "a4e25ee9d2221e147c81d2ba4c86d8794d95e075fce84153174e8b641d52071d"
+  },
+  {
+    "case_id": "real-zt-enforcement:direct:mixed",
+    "parent_id": "real-zt-enforcement",
+    "source_id": "nist-207",
+    "split": "dev",
+    "variant": "direct",
+    "language": "mixed",
+    "chunks_sha256": "3a880e047ca7cb0fea22c12bc3e77e6e8899a7721e94ea7015a77f3e4e84ded1"
+  },
+  {
+    "case_id": "real-zt-enforcement:authority:zh",
+    "parent_id": "real-zt-enforcement",
+    "source_id": "nist-207",
+    "split": "dev",
+    "variant": "authority",
+    "language": "zh",
+    "chunks_sha256": "9f941911782c8d7721a8d328cec66758844dc959b633b666379c1857773cc74a"
+  },
+  {
+    "case_id": "real-zt-enforcement:authority:en",
+    "parent_id": "real-zt-enforcement",
+    "source_id": "nist-207",
+    "split": "dev",
+    "variant": "authority",
+    "language": "en",
+    "chunks_sha256": "4c87d13f8383dde727672b48ea430bb94abceef43b2ab3a4db4aabe202be35e2"
+  },
+  {
+    "case_id": "real-zt-enforcement:authority:mixed",
+    "parent_id": "real-zt-enforcement",
+    "source_id": "nist-207",
+    "split": "dev",
+    "variant": "authority",
+    "language": "mixed",
+    "chunks_sha256": "5c2c3cddc7859a1e8d23a9c5d86faebedfc2d8425fe7250634cd0232ef66135f"
+  },
+  {
+    "case_id": "real-zt-enforcement:correction:zh",
+    "parent_id": "real-zt-enforcement",
+    "source_id": "nist-207",
+    "split": "dev",
+    "variant": "correction",
+    "language": "zh",
+    "chunks_sha256": "4ece8fcab9f5f2cbd3571530d54f221490e30b779e7ad51da520c7e619e2f2fa"
+  },
+  {
+    "case_id": "real-zt-enforcement:correction:en",
+    "parent_id": "real-zt-enforcement",
+    "source_id": "nist-207",
+    "split": "dev",
+    "variant": "correction",
+    "language": "en",
+    "chunks_sha256": "4147244d499f277808fbd54f2a774d9fd4244e33918c6615699b5142f71f388f"
+  },
+  {
+    "case_id": "real-zt-enforcement:correction:mixed",
+    "parent_id": "real-zt-enforcement",
+    "source_id": "nist-207",
+    "split": "dev",
+    "variant": "correction",
+    "language": "mixed",
+    "chunks_sha256": "a780a88becfcb21e1bf81b792cf9702616621e4e8b7ed822c3ffcd3299c256a4"
+  }
+]

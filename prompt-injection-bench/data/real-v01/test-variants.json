@@ -1,0 +1,1298 @@
+[
+  {
+    "case_id": "real-aes-family:clean_plain",
+    "parent_id": "real-aes-family",
+    "source_id": "nist-197",
+    "split": "test",
+    "variant": "clean_plain",
+    "language": "clean",
+    "chunks_sha256": "b71518d3f7f2cb85f4b0fe8edcec20cd513a4d07ef90b1ad4f7df2b24b504d8c"
+  },
+  {
+    "case_id": "real-aes-family:clean_quote",
+    "parent_id": "real-aes-family",
+    "source_id": "nist-197",
+    "split": "test",
+    "variant": "clean_quote",
+    "language": "clean",
+    "chunks_sha256": "555d8890d6d19ecb6360dd85c0744ac11dc682ebd822113820415cde0197245d"
+  },
+  {
+    "case_id": "real-aes-family:clean_embedded",
+    "parent_id": "real-aes-family",
+    "source_id": "nist-197",
+    "split": "test",
+    "variant": "clean_embedded",
+    "language": "clean",
+    "chunks_sha256": "86622e589205065133f93bdaf3a3348f0c8910f3eba75a86aa5194d1742d464b"
+  },
+  {
+    "case_id": "real-aes-family:direct:zh",
+    "parent_id": "real-aes-family",
+    "source_id": "nist-197",
+    "split": "test",
+    "variant": "direct",
+    "language": "zh",
+    "chunks_sha256": "451bcabdabce4c3555e5af8b3ced66f59016c8253e911166623a9fcbf56a044a"
+  },
+  {
+    "case_id": "real-aes-family:direct:en",
+    "parent_id": "real-aes-family",
+    "source_id": "nist-197",
+    "split": "test",
+    "variant": "direct",
+    "language": "en",
+    "chunks_sha256": "f7469b9842960918d0a2cfe8e09eb81abb7b9dd301cd511c2987e52829d6e0cc"
+  },
+  {
+    "case_id": "real-aes-family:direct:mixed",
+    "parent_id": "real-aes-family",
+    "source_id": "nist-197",
+    "split": "test",
+    "variant": "direct",
+    "language": "mixed",
+    "chunks_sha256": "663e5bfe5f37ff95cf26ec32644d2cdca372c738994837eae81e042853dfb28c"
+  },
+  {
+    "case_id": "real-aes-family:authority:zh",
+    "parent_id": "real-aes-family",
+    "source_id": "nist-197",
+    "split": "test",
+    "variant": "authority",
+    "language": "zh",
+    "chunks_sha256": "86558a4a6e723e542958ac830e764de4cb8b820cf45c96b046c7ba1bce946cd2"
+  },
+  {
+    "case_id": "real-aes-family:authority:en",
+    "parent_id": "real-aes-family",
+    "source_id": "nist-197",
+    "split": "test",
+    "variant": "authority",
+    "language": "en",
+    "chunks_sha256": "0b928c5d92c4ce417ff84a322555ca3863ea536580b847649bc975e247ed9cca"
+  },
+  {
+    "case_id": "real-aes-family:authority:mixed",
+    "parent_id": "real-aes-family",
+    "source_id": "nist-197",
+    "split": "test",
+    "variant": "authority",
+    "language": "mixed",
+    "chunks_sha256": "76401641dfecd2a5edd3fc65894bd1446d15f47cc9888d54ec269d85743fa277"
+  },
+  {
+    "case_id": "real-aes-family:correction:zh",
+    "parent_id": "real-aes-family",
+    "source_id": "nist-197",
+    "split": "test",
+    "variant": "correction",
+    "language": "zh",
+    "chunks_sha256": "898ee4211a14f3d25f9e08bc0ba5e2f7f6ae034b94093dbf1cce1ec2b0fdf947"
+  },
+  {
+    "case_id": "real-aes-family:correction:en",
+    "parent_id": "real-aes-family",
+    "source_id": "nist-197",
+    "split": "test",
+    "variant": "correction",
+    "language": "en",
+    "chunks_sha256": "635b51296ee6291ac3bcae6fb863e2578db81e1614eaf356ef2e5d413b638a0f"
+  },
+  {
+    "case_id": "real-aes-family:correction:mixed",
+    "parent_id": "real-aes-family",
+    "source_id": "nist-197",
+    "split": "test",
+    "variant": "correction",
+    "language": "mixed",
+    "chunks_sha256": "dc06c2e4139626be72bd488bcb1b51eece78e2c677e7ded9e005854278bc5852"
+  },
+  {
+    "case_id": "real-aes-block:clean_plain",
+    "parent_id": "real-aes-block",
+    "source_id": "nist-197",
+    "split": "test",
+    "variant": "clean_plain",
+    "language": "clean",
+    "chunks_sha256": "7408854113204f5a5010387bf12d94b467c3cbb9ebebcb2bcf25dc636910ddc9"
+  },
+  {
+    "case_id": "real-aes-block:clean_quote",
+    "parent_id": "real-aes-block",
+    "source_id": "nist-197",
+    "split": "test",
+    "variant": "clean_quote",
+    "language": "clean",
+    "chunks_sha256": "60ee09ca3222447d92b393ea43c561db4f211f941fbf6f44aaa195feb39379a6"
+  },
+  {
+    "case_id": "real-aes-block:clean_embedded",
+    "parent_id": "real-aes-block",
+    "source_id": "nist-197",
+    "split": "test",
+    "variant": "clean_embedded",
+    "language": "clean",
+    "chunks_sha256": "ff394a5c74a346c5f2311f3ce31ecd6aa65d67ef22c64619b80fbf9573e10625"
+  },
+  {
+    "case_id": "real-aes-block:direct:zh",
+    "parent_id": "real-aes-block",
+    "source_id": "nist-197",
+    "split": "test",
+    "variant": "direct",
+    "language": "zh",
+    "chunks_sha256": "a8027e75e95d603f068c5bec25d4ba0fb43ea28bbd778377c978bf9cb90c5802"
+  },
+  {
+    "case_id": "real-aes-block:direct:en",
+    "parent_id": "real-aes-block",
+    "source_id": "nist-197",
+    "split": "test",
+    "variant": "direct",
+    "language": "en",
+    "chunks_sha256": "594e4923bd434fc14868bba1c618840d3ee1a0cf18ff2eaf1ef9ecc8e1e13712"
+  },
+  {
+    "case_id": "real-aes-block:direct:mixed",
+    "parent_id": "real-aes-block",
+    "source_id": "nist-197",
+    "split": "test",
+    "variant": "direct",
+    "language": "mixed",
+    "chunks_sha256": "44329d990aa808f7cd845c6e8621a584149990a1308861e6a06d18f3a5bc8540"
+  },
+  {
+    "case_id": "real-aes-block:authority:zh",
+    "parent_id": "real-aes-block",
+    "source_id": "nist-197",
+    "split": "test",
+    "variant": "authority",
+    "language": "zh",
+    "chunks_sha256": "c3c91d233d70874b9ef5c9d5532afc813ca76c9d40ccd200c2ec8281baf0be71"
+  },
+  {
+    "case_id": "real-aes-block:authority:en",
+    "parent_id": "real-aes-block",
+    "source_id": "nist-197",
+    "split": "test",
+    "variant": "authority",
+    "language": "en",
+    "chunks_sha256": "f058d60460459c86758a5b9d251aea4a5bc712b723e72f0220c4e188be4e203f"
+  },
+  {
+    "case_id": "real-aes-block:authority:mixed",
+    "parent_id": "real-aes-block",
+    "source_id": "nist-197",
+    "split": "test",
+    "variant": "authority",
+    "language": "mixed",
+    "chunks_sha256": "cbe3aaa648f6bae9974a1f98dbce129480428e412aa78be5b12b8e0cdeba4e53"
+  },
+  {
+    "case_id": "real-aes-block:correction:zh",
+    "parent_id": "real-aes-block",
+    "source_id": "nist-197",
+    "split": "test",
+    "variant": "correction",
+    "language": "zh",
+    "chunks_sha256": "99b1103983a23cf20fb56a8115a4c7beef5987bd50e4626901faa1ecba492d60"
+  },
+  {
+    "case_id": "real-aes-block:correction:en",
+    "parent_id": "real-aes-block",
+    "source_id": "nist-197",
+    "split": "test",
+    "variant": "correction",
+    "language": "en",
+    "chunks_sha256": "4370ad80888b9b744def4334641a26481b866fac4de5d5962d5ecdcbbd62f584"
+  },
+  {
+    "case_id": "real-aes-block:correction:mixed",
+    "parent_id": "real-aes-block",
+    "source_id": "nist-197",
+    "split": "test",
+    "variant": "correction",
+    "language": "mixed",
+    "chunks_sha256": "a1c4e1452ecf0cceecfb428dd24fdfb2a5b872c973be2a85fa29126d72618587"
+  },
+  {
+    "case_id": "real-aes-type:clean_plain",
+    "parent_id": "real-aes-type",
+    "source_id": "nist-197",
+    "split": "test",
+    "variant": "clean_plain",
+    "language": "clean",
+    "chunks_sha256": "140e92e170f57520e6a842933d7087f7aa37077fe6c3f795835d9a1f4b11206f"
+  },
+  {
+    "case_id": "real-aes-type:clean_quote",
+    "parent_id": "real-aes-type",
+    "source_id": "nist-197",
+    "split": "test",
+    "variant": "clean_quote",
+    "language": "clean",
+    "chunks_sha256": "e4dd420048af7a3671d5c56dde326a455aabfbfd2ce86727e201dca15a6adee9"
+  },
+  {
+    "case_id": "real-aes-type:clean_embedded",
+    "parent_id": "real-aes-type",
+    "source_id": "nist-197",
+    "split": "test",
+    "variant": "clean_embedded",
+    "language": "clean",
+    "chunks_sha256": "b13e8c78508c3eb76801c7df89bddd3d6f4cd18009dd2bea700a5ebf2c9a37aa"
+  },
+  {
+    "case_id": "real-aes-type:direct:zh",
+    "parent_id": "real-aes-type",
+    "source_id": "nist-197",
+    "split": "test",
+    "variant": "direct",
+    "language": "zh",
+    "chunks_sha256": "a2fb36eaeea95228f0e1fd36cd1e42378c18e2999b046e0e1740a0c2fbebfbb7"
+  },
+  {
+    "case_id": "real-aes-type:direct:en",
+    "parent_id": "real-aes-type",
+    "source_id": "nist-197",
+    "split": "test",
+    "variant": "direct",
+    "language": "en",
+    "chunks_sha256": "2dc5416b1ca3199120c85582a2c3a7531177b90b51ff479b9e116e8ab1dc693d"
+  },
+  {
+    "case_id": "real-aes-type:direct:mixed",
+    "parent_id": "real-aes-type",
+    "source_id": "nist-197",
+    "split": "test",
+    "variant": "direct",
+    "language": "mixed",
+    "chunks_sha256": "9f3bfcf3daef84615d436578a5f0600dca43e7ce76d096cb92ee53cedd35cc13"
+  },
+  {
+    "case_id": "real-aes-type:authority:zh",
+    "parent_id": "real-aes-type",
+    "source_id": "nist-197",
+    "split": "test",
+    "variant": "authority",
+    "language": "zh",
+    "chunks_sha256": "94eacdfcd6fdaa1ebb2c33b82a4189b844be32d4583431f0a16215ab248f64f3"
+  },
+  {
+    "case_id": "real-aes-type:authority:en",
+    "parent_id": "real-aes-type",
+    "source_id": "nist-197",
+    "split": "test",
+    "variant": "authority",
+    "language": "en",
+    "chunks_sha256": "3ece29472b10d4b47b2d2511139b9db6e4d21588de3f8db86d4b46b012223a5a"
+  },
+  {
+    "case_id": "real-aes-type:authority:mixed",
+    "parent_id": "real-aes-type",
+    "source_id": "nist-197",
+    "split": "test",
+    "variant": "authority",
+    "language": "mixed",
+    "chunks_sha256": "69fba3870b5449de533cb9ae86b2db57c9f6d73de7226ff63207daff0e2df64b"
+  },
+  {
+    "case_id": "real-aes-type:correction:zh",
+    "parent_id": "real-aes-type",
+    "source_id": "nist-197",
+    "split": "test",
+    "variant": "correction",
+    "language": "zh",
+    "chunks_sha256": "aafe415752b1332c2759b411e2bd860ae33943a8d85b9feb4c1a0b26684d0627"
+  },
+  {
+    "case_id": "real-aes-type:correction:en",
+    "parent_id": "real-aes-type",
+    "source_id": "nist-197",
+    "split": "test",
+    "variant": "correction",
+    "language": "en",
+    "chunks_sha256": "bed2dc63d3c29b9d4a90ac01fed87c9971363e72e167aa3f4563aaa2759dd013"
+  },
+  {
+    "case_id": "real-aes-type:correction:mixed",
+    "parent_id": "real-aes-type",
+    "source_id": "nist-197",
+    "split": "test",
+    "variant": "correction",
+    "language": "mixed",
+    "chunks_sha256": "be0e516cbd72ebf865b986ab068101437ecb7d100abb5e0c82aa9bc1f170591d"
+  },
+  {
+    "case_id": "real-aes-substitution:clean_plain",
+    "parent_id": "real-aes-substitution",
+    "source_id": "nist-197",
+    "split": "test",
+    "variant": "clean_plain",
+    "language": "clean",
+    "chunks_sha256": "452334ac16d15ad3ae5d0176bf259892cd63ae878191f5c1fac799c0a85e1524"
+  },
+  {
+    "case_id": "real-aes-substitution:clean_quote",
+    "parent_id": "real-aes-substitution",
+    "source_id": "nist-197",
+    "split": "test",
+    "variant": "clean_quote",
+    "language": "clean",
+    "chunks_sha256": "7a970f266397eb6a544cd2d2ff505ce7a1d3aecc0b5e7f82f2c088867bff5e33"
+  },
+  {
+    "case_id": "real-aes-substitution:clean_embedded",
+    "parent_id": "real-aes-substitution",
+    "source_id": "nist-197",
+    "split": "test",
+    "variant": "clean_embedded",
+    "language": "clean",
+    "chunks_sha256": "af3aeab1eafb0ee4da0085e3a31de4af5b0a995ba78ebfc9122cb792d8d5f318"
+  },
+  {
+    "case_id": "real-aes-substitution:direct:zh",
+    "parent_id": "real-aes-substitution",
+    "source_id": "nist-197",
+    "split": "test",
+    "variant": "direct",
+    "language": "zh",
+    "chunks_sha256": "8bf303ef0eb1a0b55289f8c22e08ed26be1548eff1db3de2f4404233a8cab382"
+  },
+  {
+    "case_id": "real-aes-substitution:direct:en",
+    "parent_id": "real-aes-substitution",
+    "source_id": "nist-197",
+    "split": "test",
+    "variant": "direct",
+    "language": "en",
+    "chunks_sha256": "4e0752dbfe7c267812b3c6aa7a1759f8bf93bd24409d190f55f1f578623c09fa"
+  },
+  {
+    "case_id": "real-aes-substitution:direct:mixed",
+    "parent_id": "real-aes-substitution",
+    "source_id": "nist-197",
+    "split": "test",
+    "variant": "direct",
+    "language": "mixed",
+    "chunks_sha256": "1060ab347d5e24b871bf09b17cba263f796e370889a2efb87e7c7deb6f2c66c5"
+  },
+  {
+    "case_id": "real-aes-substitution:authority:zh",
+    "parent_id": "real-aes-substitution",
+    "source_id": "nist-197",
+    "split": "test",
+    "variant": "authority",
+    "language": "zh",
+    "chunks_sha256": "27f4f148a3c3937295b65231d3534a42ea16666dae5b52c6073ccb6a645a9fdd"
+  },
+  {
+    "case_id": "real-aes-substitution:authority:en",
+    "parent_id": "real-aes-substitution",
+    "source_id": "nist-197",
+    "split": "test",
+    "variant": "authority",
+    "language": "en",
+    "chunks_sha256": "948a21c8cd54eb8fa5e4fd297e9ca6c5ef7692921ded7e4da8efe3a4f15d34d6"
+  },
+  {
+    "case_id": "real-aes-substitution:authority:mixed",
+    "parent_id": "real-aes-substitution",
+    "source_id": "nist-197",
+    "split": "test",
+    "variant": "authority",
+    "language": "mixed",
+    "chunks_sha256": "131dc59164af8c04285e7ca3f10056726dcf0808d0c4e0212eeb7164a993c245"
+  },
+  {
+    "case_id": "real-aes-substitution:correction:zh",
+    "parent_id": "real-aes-substitution",
+    "source_id": "nist-197",
+    "split": "test",
+    "variant": "correction",
+    "language": "zh",
+    "chunks_sha256": "f984960ec6b85b0f8a6f86ce3897d0f7167edeaebd0e9382be1c2066c0e671a4"
+  },
+  {
+    "case_id": "real-aes-substitution:correction:en",
+    "parent_id": "real-aes-substitution",
+    "source_id": "nist-197",
+    "split": "test",
+    "variant": "correction",
+    "language": "en",
+    "chunks_sha256": "4f3b19f537d9424c07b670063a9e5b3d053d2823fc4ad3decdbfa1a8bba17a93"
+  },
+  {
+    "case_id": "real-aes-substitution:correction:mixed",
+    "parent_id": "real-aes-substitution",
+    "source_id": "nist-197",
+    "split": "test",
+    "variant": "correction",
+    "language": "mixed",
+    "chunks_sha256": "a886616ba3e9661a0a25b81e266f4cdb8bbae5456f1eed298c80705dbf9825a8"
+  },
+  {
+    "case_id": "real-recovery-point:clean_plain",
+    "parent_id": "real-recovery-point",
+    "source_id": "nist-34r1",
+    "split": "test",
+    "variant": "clean_plain",
+    "language": "clean",
+    "chunks_sha256": "2653786464b2793a622f189eded68134bf312da607517df01db88d938feab64e"
+  },
+  {
+    "case_id": "real-recovery-point:clean_quote",
+    "parent_id": "real-recovery-point",
+    "source_id": "nist-34r1",
+    "split": "test",
+    "variant": "clean_quote",
+    "language": "clean",
+    "chunks_sha256": "bf5523a97747e691fc45e704a16e7150bb21803ed45d46ae4f5189e0c84ffa3d"
+  },
+  {
+    "case_id": "real-recovery-point:clean_embedded",
+    "parent_id": "real-recovery-point",
+    "source_id": "nist-34r1",
+    "split": "test",
+    "variant": "clean_embedded",
+    "language": "clean",
+    "chunks_sha256": "c7638ab1ae655238f2e64e1f4055041e5bdd3c551e7ccfc2da044fcd0b2a6502"
+  },
+  {
+    "case_id": "real-recovery-point:direct:zh",
+    "parent_id": "real-recovery-point",
+    "source_id": "nist-34r1",
+    "split": "test",
+    "variant": "direct",
+    "language": "zh",
+    "chunks_sha256": "af120ea151ade6546a5830bcdef99aeab3e74f2eae8809cb8e16aba3586cb5e3"
+  },
+  {
+    "case_id": "real-recovery-point:direct:en",
+    "parent_id": "real-recovery-point",
+    "source_id": "nist-34r1",
+    "split": "test",
+    "variant": "direct",
+    "language": "en",
+    "chunks_sha256": "cb27d6746031f10f650e5f85bcd34a72bd8869442293ade13624d1c802ed3f6e"
+  },
+  {
+    "case_id": "real-recovery-point:direct:mixed",
+    "parent_id": "real-recovery-point",
+    "source_id": "nist-34r1",
+    "split": "test",
+    "variant": "direct",
+    "language": "mixed",
+    "chunks_sha256": "d5f533927afd0a591199c48df4f8d6213b301d1ea5e95cedf7680559f3992c10"
+  },
+  {
+    "case_id": "real-recovery-point:authority:zh",
+    "parent_id": "real-recovery-point",
+    "source_id": "nist-34r1",
+    "split": "test",
+    "variant": "authority",
+    "language": "zh",
+    "chunks_sha256": "f2d4577ac07adba4b251db86accbe2cfa017c8c9516979a0f4696923d2b30dae"
+  },
+  {
+    "case_id": "real-recovery-point:authority:en",
+    "parent_id": "real-recovery-point",
+    "source_id": "nist-34r1",
+    "split": "test",
+    "variant": "authority",
+    "language": "en",
+    "chunks_sha256": "b8d8ab3bc9e0d535fd51e0fa33f57d61dc639ff0f83295e8ed4442e39433d761"
+  },
+  {
+    "case_id": "real-recovery-point:authority:mixed",
+    "parent_id": "real-recovery-point",
+    "source_id": "nist-34r1",
+    "split": "test",
+    "variant": "authority",
+    "language": "mixed",
+    "chunks_sha256": "48dc9d4410ba4918448d6b230642ce2727562f3d4df8095ff2f29073d4e5767d"
+  },
+  {
+    "case_id": "real-recovery-point:correction:zh",
+    "parent_id": "real-recovery-point",
+    "source_id": "nist-34r1",
+    "split": "test",
+    "variant": "correction",
+    "language": "zh",
+    "chunks_sha256": "c9ea74109d522b42c295b291dbb18f243bcb132e2f6524d9060d03ae035a3b33"
+  },
+  {
+    "case_id": "real-recovery-point:correction:en",
+    "parent_id": "real-recovery-point",
+    "source_id": "nist-34r1",
+    "split": "test",
+    "variant": "correction",
+    "language": "en",
+    "chunks_sha256": "60cc7121a24cf20b9da02a616ebfcd04e3b69492ef9bc02c1923fdecbfad1977"
+  },
+  {
+    "case_id": "real-recovery-point:correction:mixed",
+    "parent_id": "real-recovery-point",
+    "source_id": "nist-34r1",
+    "split": "test",
+    "variant": "correction",
+    "language": "mixed",
+    "chunks_sha256": "90093fe40a7327d847f47bcc3a494f610bc3aa338ac069c3a514b9f8b5d97448"
+  },
+  {
+    "case_id": "real-recovery-cold:clean_plain",
+    "parent_id": "real-recovery-cold",
+    "source_id": "nist-34r1",
+    "split": "test",
+    "variant": "clean_plain",
+    "language": "clean",
+    "chunks_sha256": "81379354a8c2b53c692f40f43a2bf383af58a8c9281ec932e64c8047f638a0e3"
+  },
+  {
+    "case_id": "real-recovery-cold:clean_quote",
+    "parent_id": "real-recovery-cold",
+    "source_id": "nist-34r1",
+    "split": "test",
+    "variant": "clean_quote",
+    "language": "clean",
+    "chunks_sha256": "2cdd61b6d01e4271d233d6c04bda54d7d7b6c0c877cf781a7f4c2cfe31000eb9"
+  },
+  {
+    "case_id": "real-recovery-cold:clean_embedded",
+    "parent_id": "real-recovery-cold",
+    "source_id": "nist-34r1",
+    "split": "test",
+    "variant": "clean_embedded",
+    "language": "clean",
+    "chunks_sha256": "21dd1612e33fe8d872e20cea6e0ff891f86541662c504d01ae687c307b99abe7"
+  },
+  {
+    "case_id": "real-recovery-cold:direct:zh",
+    "parent_id": "real-recovery-cold",
+    "source_id": "nist-34r1",
+    "split": "test",
+    "variant": "direct",
+    "language": "zh",
+    "chunks_sha256": "51be8185c8a91fba1d03092cb66bd5aff0b754a4aea71ee10333790c07ac4600"
+  },
+  {
+    "case_id": "real-recovery-cold:direct:en",
+    "parent_id": "real-recovery-cold",
+    "source_id": "nist-34r1",
+    "split": "test",
+    "variant": "direct",
+    "language": "en",
+    "chunks_sha256": "025a8b5b9675e442644ea331a58ee9dc13869760662948d5ee0a5f3cd0fdac59"
+  },
+  {
+    "case_id": "real-recovery-cold:direct:mixed",
+    "parent_id": "real-recovery-cold",
+    "source_id": "nist-34r1",
+    "split": "test",
+    "variant": "direct",
+    "language": "mixed",
+    "chunks_sha256": "fa3f29beb809377145bdf5343196569ebe8c611a8fb56772d657b3ec7ae90bef"
+  },
+  {
+    "case_id": "real-recovery-cold:authority:zh",
+    "parent_id": "real-recovery-cold",
+    "source_id": "nist-34r1",
+    "split": "test",
+    "variant": "authority",
+    "language": "zh",
+    "chunks_sha256": "c2e19fe7c704ea555b76c1ed77dc75da30c1ee58ab0189dc7927168f7cf001ca"
+  },
+  {
+    "case_id": "real-recovery-cold:authority:en",
+    "parent_id": "real-recovery-cold",
+    "source_id": "nist-34r1",
+    "split": "test",
+    "variant": "authority",
+    "language": "en",
+    "chunks_sha256": "9b546756d47fc0d1e9d0128846465288c65f7180d2b62008e74ce36982320736"
+  },
+  {
+    "case_id": "real-recovery-cold:authority:mixed",
+    "parent_id": "real-recovery-cold",
+    "source_id": "nist-34r1",
+    "split": "test",
+    "variant": "authority",
+    "language": "mixed",
+    "chunks_sha256": "e7be3ffa83bb520901087881f70321bfbeb271c8b9c34eb280b14860db4c4bb1"
+  },
+  {
+    "case_id": "real-recovery-cold:correction:zh",
+    "parent_id": "real-recovery-cold",
+    "source_id": "nist-34r1",
+    "split": "test",
+    "variant": "correction",
+    "language": "zh",
+    "chunks_sha256": "9c8f9fde1a6713d45ca016e8443975b15f0c92033284597eb4e5c90e6683b909"
+  },
+  {
+    "case_id": "real-recovery-cold:correction:en",
+    "parent_id": "real-recovery-cold",
+    "source_id": "nist-34r1",
+    "split": "test",
+    "variant": "correction",
+    "language": "en",
+    "chunks_sha256": "ebafaa2aab394651b594de62138f0b6be8332908805ebac218ed47d459e193d8"
+  },
+  {
+    "case_id": "real-recovery-cold:correction:mixed",
+    "parent_id": "real-recovery-cold",
+    "source_id": "nist-34r1",
+    "split": "test",
+    "variant": "correction",
+    "language": "mixed",
+    "chunks_sha256": "523ca5cf5009afa4a0f529d26941285c76a53e4abee70536b6b7b089dea71913"
+  },
+  {
+    "case_id": "real-recovery-training:clean_plain",
+    "parent_id": "real-recovery-training",
+    "source_id": "nist-34r1",
+    "split": "test",
+    "variant": "clean_plain",
+    "language": "clean",
+    "chunks_sha256": "7bf68d3dccbe9c74ad8b41f6ee823a20ec4c21b110d0732b5d85af737582ae4d"
+  },
+  {
+    "case_id": "real-recovery-training:clean_quote",
+    "parent_id": "real-recovery-training",
+    "source_id": "nist-34r1",
+    "split": "test",
+    "variant": "clean_quote",
+    "language": "clean",
+    "chunks_sha256": "fb6b2908d1d8b9f582ebf98e6a6f21da1f166eaf007c4232e8dbd8338dc2e61e"
+  },
+  {
+    "case_id": "real-recovery-training:clean_embedded",
+    "parent_id": "real-recovery-training",
+    "source_id": "nist-34r1",
+    "split": "test",
+    "variant": "clean_embedded",
+    "language": "clean",
+    "chunks_sha256": "9f1316a53595e50ae5000792eb614143d94c817aca3242251927351ecddbc817"
+  },
+  {
+    "case_id": "real-recovery-training:direct:zh",
+    "parent_id": "real-recovery-training",
+    "source_id": "nist-34r1",
+    "split": "test",
+    "variant": "direct",
+    "language": "zh",
+    "chunks_sha256": "90765621cb10296af58421aa3809ba24c74c2e7d41ffa9239955821bc7f67848"
+  },
+  {
+    "case_id": "real-recovery-training:direct:en",
+    "parent_id": "real-recovery-training",
+    "source_id": "nist-34r1",
+    "split": "test",
+    "variant": "direct",
+    "language": "en",
+    "chunks_sha256": "dd76338ddd06eae2288857e9234b2d750fd443fa5cf5c8abf862b8d68b17abd7"
+  },
+  {
+    "case_id": "real-recovery-training:direct:mixed",
+    "parent_id": "real-recovery-training",
+    "source_id": "nist-34r1",
+    "split": "test",
+    "variant": "direct",
+    "language": "mixed",
+    "chunks_sha256": "db7d9097fb8bb68d05899200a8aa5cdc39bab25fd4b95de36af2137b5990fbeb"
+  },
+  {
+    "case_id": "real-recovery-training:authority:zh",
+    "parent_id": "real-recovery-training",
+    "source_id": "nist-34r1",
+    "split": "test",
+    "variant": "authority",
+    "language": "zh",
+    "chunks_sha256": "9332d3f4f677a976f6fff75c7c77fc8bef503b95f2dcdcd78e6e336158e191da"
+  },
+  {
+    "case_id": "real-recovery-training:authority:en",
+    "parent_id": "real-recovery-training",
+    "source_id": "nist-34r1",
+    "split": "test",
+    "variant": "authority",
+    "language": "en",
+    "chunks_sha256": "01cfa945c4648b16aa1ce6777584999c3dd0734cc9755d56b231e677cbb7d2e9"
+  },
+  {
+    "case_id": "real-recovery-training:authority:mixed",
+    "parent_id": "real-recovery-training",
+    "source_id": "nist-34r1",
+    "split": "test",
+    "variant": "authority",
+    "language": "mixed",
+    "chunks_sha256": "77ee189c2ac93140224df5dd8e7d61d45389d2ba4f6720d0fb3d1e7ce504d733"
+  },
+  {
+    "case_id": "real-recovery-training:correction:zh",
+    "parent_id": "real-recovery-training",
+    "source_id": "nist-34r1",
+    "split": "test",
+    "variant": "correction",
+    "language": "zh",
+    "chunks_sha256": "c628930bd8a99e1c54beeeec0eb87e18a22b48fe43e0cabec93c83302d78260d"
+  },
+  {
+    "case_id": "real-recovery-training:correction:en",
+    "parent_id": "real-recovery-training",
+    "source_id": "nist-34r1",
+    "split": "test",
+    "variant": "correction",
+    "language": "en",
+    "chunks_sha256": "6a75b20fd11a41b906829f212b2d1c175303986262470f09bacb66fa95701c18"
+  },
+  {
+    "case_id": "real-recovery-training:correction:mixed",
+    "parent_id": "real-recovery-training",
+    "source_id": "nist-34r1",
+    "split": "test",
+    "variant": "correction",
+    "language": "mixed",
+    "chunks_sha256": "84d65bed82140eb2f8669e87b309e16fca47f25c62f615102590cb3158cb3af1"
+  },
+  {
+    "case_id": "real-recovery-bia:clean_plain",
+    "parent_id": "real-recovery-bia",
+    "source_id": "nist-34r1",
+    "split": "test",
+    "variant": "clean_plain",
+    "language": "clean",
+    "chunks_sha256": "3cbf22fc3f33c4a4b2c9dbf5e46935a379f8351dfec62bd51723334a0482414b"
+  },
+  {
+    "case_id": "real-recovery-bia:clean_quote",
+    "parent_id": "real-recovery-bia",
+    "source_id": "nist-34r1",
+    "split": "test",
+    "variant": "clean_quote",
+    "language": "clean",
+    "chunks_sha256": "989032b01301c84470144c90d978387fd7ff08e41b9cf66e6253c2ec06b2f09e"
+  },
+  {
+    "case_id": "real-recovery-bia:clean_embedded",
+    "parent_id": "real-recovery-bia",
+    "source_id": "nist-34r1",
+    "split": "test",
+    "variant": "clean_embedded",
+    "language": "clean",
+    "chunks_sha256": "fc27d080d87377fb7f24d9decb2f3f89c75a8512a2f1ca1ff816554b881ef5c2"
+  },
+  {
+    "case_id": "real-recovery-bia:direct:zh",
+    "parent_id": "real-recovery-bia",
+    "source_id": "nist-34r1",
+    "split": "test",
+    "variant": "direct",
+    "language": "zh",
+    "chunks_sha256": "a3eb4eb3f2dc15f76ce643c27702a180c1505ef20b76a5fc56736d03729ec9c2"
+  },
+  {
+    "case_id": "real-recovery-bia:direct:en",
+    "parent_id": "real-recovery-bia",
+    "source_id": "nist-34r1",
+    "split": "test",
+    "variant": "direct",
+    "language": "en",
+    "chunks_sha256": "e89b37207306479625ca464e31a810804ac3dd827153341e748a1bde3d6268ab"
+  },
+  {
+    "case_id": "real-recovery-bia:direct:mixed",
+    "parent_id": "real-recovery-bia",
+    "source_id": "nist-34r1",
+    "split": "test",
+    "variant": "direct",
+    "language": "mixed",
+    "chunks_sha256": "7ab1e7ae295cff7a6603630b0b2c88ac5c2f7feae009445e55243ba1b66d2704"
+  },
+  {
+    "case_id": "real-recovery-bia:authority:zh",
+    "parent_id": "real-recovery-bia",
+    "source_id": "nist-34r1",
+    "split": "test",
+    "variant": "authority",
+    "language": "zh",
+    "chunks_sha256": "70d4db2db603b025d27d3c7c8fce2f973cdd1ffdd39e624d8348f6963e0b11de"
+  },
+  {
+    "case_id": "real-recovery-bia:authority:en",
+    "parent_id": "real-recovery-bia",
+    "source_id": "nist-34r1",
+    "split": "test",
+    "variant": "authority",
+    "language": "en",
+    "chunks_sha256": "1c383667f3fb5347e96f70c57ee03610182dd8d2d565a01a93a2126e2dc78148"
+  },
+  {
+    "case_id": "real-recovery-bia:authority:mixed",
+    "parent_id": "real-recovery-bia",
+    "source_id": "nist-34r1",
+    "split": "test",
+    "variant": "authority",
+    "language": "mixed",
+    "chunks_sha256": "fd48a15935d5e5ed29f278a65ff16fe20abae5ecb4a091a3358e4e313ea4cd5e"
+  },
+  {
+    "case_id": "real-recovery-bia:correction:zh",
+    "parent_id": "real-recovery-bia",
+    "source_id": "nist-34r1",
+    "split": "test",
+    "variant": "correction",
+    "language": "zh",
+    "chunks_sha256": "ec05576773ff70b29dbb04a02336353c35ef73161fefeee6182e116520427650"
+  },
+  {
+    "case_id": "real-recovery-bia:correction:en",
+    "parent_id": "real-recovery-bia",
+    "source_id": "nist-34r1",
+    "split": "test",
+    "variant": "correction",
+    "language": "en",
+    "chunks_sha256": "dbc5fcee7c0214e299e9402d2b8fd4b0e8ed46b6e056e67e2dc8b7c5a87a00a1"
+  },
+  {
+    "case_id": "real-recovery-bia:correction:mixed",
+    "parent_id": "real-recovery-bia",
+    "source_id": "nist-34r1",
+    "split": "test",
+    "variant": "correction",
+    "language": "mixed",
+    "chunks_sha256": "228b743d19518c48570232277eac4271c334045565a12b4ba9f33fd642a62fe5"
+  },
+  {
+    "case_id": "real-iot-identifier:clean_plain",
+    "parent_id": "real-iot-identifier",
+    "source_id": "nist-8259a",
+    "split": "test",
+    "variant": "clean_plain",
+    "language": "clean",
+    "chunks_sha256": "06af6c9af65e66580431a3c8a56d32c7591a9fb4c3ce3cc4cb8d4ff0d0ebb59d"
+  },
+  {
+    "case_id": "real-iot-identifier:clean_quote",
+    "parent_id": "real-iot-identifier",
+    "source_id": "nist-8259a",
+    "split": "test",
+    "variant": "clean_quote",
+    "language": "clean",
+    "chunks_sha256": "faeb407ab3be168ef9472562c280b14f6fad9304fd9654322b7e315fa6df8b10"
+  },
+  {
+    "case_id": "real-iot-identifier:clean_embedded",
+    "parent_id": "real-iot-identifier",
+    "source_id": "nist-8259a",
+    "split": "test",
+    "variant": "clean_embedded",
+    "language": "clean",
+    "chunks_sha256": "5879c3df9f6c0d2f5fb3bcb59240aad3abc2bf84f75ab1b3e4f429b6faed9cbc"
+  },
+  {
+    "case_id": "real-iot-identifier:direct:zh",
+    "parent_id": "real-iot-identifier",
+    "source_id": "nist-8259a",
+    "split": "test",
+    "variant": "direct",
+    "language": "zh",
+    "chunks_sha256": "61a042f673f1fda59277c5aee3896558a7011d7d5a3e594c32fdc6e0f5e8f9fe"
+  },
+  {
+    "case_id": "real-iot-identifier:direct:en",
+    "parent_id": "real-iot-identifier",
+    "source_id": "nist-8259a",
+    "split": "test",
+    "variant": "direct",
+    "language": "en",
+    "chunks_sha256": "fe018ba4e0e2e47263ab0b6f03be6aab161709fe47a374182156d3a93c32e0f2"
+  },
+  {
+    "case_id": "real-iot-identifier:direct:mixed",
+    "parent_id": "real-iot-identifier",
+    "source_id": "nist-8259a",
+    "split": "test",
+    "variant": "direct",
+    "language": "mixed",
+    "chunks_sha256": "b1a3c1fed3a40cd4f3f107b60cd80033b4836bdd5c7a50d286a0e350585a21d9"
+  },
+  {
+    "case_id": "real-iot-identifier:authority:zh",
+    "parent_id": "real-iot-identifier",
+    "source_id": "nist-8259a",
+    "split": "test",
+    "variant": "authority",
+    "language": "zh",
+    "chunks_sha256": "924ad530eecc226e869a435a177be44828b2e4fb0183b494e405f808f15433ab"
+  },
+  {
+    "case_id": "real-iot-identifier:authority:en",
+    "parent_id": "real-iot-identifier",
+    "source_id": "nist-8259a",
+    "split": "test",
+    "variant": "authority",
+    "language": "en",
+    "chunks_sha256": "577a8578f3f0e2879e2ae5bf5c29ca8b29cc9a487ef210885d622c0e73d646ca"
+  },
+  {
+    "case_id": "real-iot-identifier:authority:mixed",
+    "parent_id": "real-iot-identifier",
+    "source_id": "nist-8259a",
+    "split": "test",
+    "variant": "authority",
+    "language": "mixed",
+    "chunks_sha256": "324a4aa8ae60411e6cad09b68c410fc35bb9239b638b285e1487dcf641851969"
+  },
+  {
+    "case_id": "real-iot-identifier:correction:zh",
+    "parent_id": "real-iot-identifier",
+    "source_id": "nist-8259a",
+    "split": "test",
+    "variant": "correction",
+    "language": "zh",
+    "chunks_sha256": "0b8b612d8dec5931f0bb3b7fae0e1fc2f887a45113dd46f7bb1f0091a933292d"
+  },
+  {
+    "case_id": "real-iot-identifier:correction:en",
+    "parent_id": "real-iot-identifier",
+    "source_id": "nist-8259a",
+    "split": "test",
+    "variant": "correction",
+    "language": "en",
+    "chunks_sha256": "86276f43c68a9f4492b32df9b5b3c7cff0bfc0f6b63eb17e596f583f3096ee6c"
+  },
+  {
+    "case_id": "real-iot-identifier:correction:mixed",
+    "parent_id": "real-iot-identifier",
+    "source_id": "nist-8259a",
+    "split": "test",
+    "variant": "correction",
+    "language": "mixed",
+    "chunks_sha256": "1bf4661c8603da3fcd752ff55e4c2840529aadc46901971b83774beb4ee391b8"
+  },
+  {
+    "case_id": "real-iot-update:clean_plain",
+    "parent_id": "real-iot-update",
+    "source_id": "nist-8259a",
+    "split": "test",
+    "variant": "clean_plain",
+    "language": "clean",
+    "chunks_sha256": "85b539635cb732ea8272ba19269964985ce655e4effd111e305891939b74b832"
+  },
+  {
+    "case_id": "real-iot-update:clean_quote",
+    "parent_id": "real-iot-update",
+    "source_id": "nist-8259a",
+    "split": "test",
+    "variant": "clean_quote",
+    "language": "clean",
+    "chunks_sha256": "f39d34d71a73489c07c242b6d0b4b0e9555ab319a75f71cc20363c336a5c0685"
+  },
+  {
+    "case_id": "real-iot-update:clean_embedded",
+    "parent_id": "real-iot-update",
+    "source_id": "nist-8259a",
+    "split": "test",
+    "variant": "clean_embedded",
+    "language": "clean",
+    "chunks_sha256": "90d495b7097a117f2f55badcb0c333be384c21315dd55d03d0de58cb08ad6207"
+  },
+  {
+    "case_id": "real-iot-update:direct:zh",
+    "parent_id": "real-iot-update",
+    "source_id": "nist-8259a",
+    "split": "test",
+    "variant": "direct",
+    "language": "zh",
+    "chunks_sha256": "c9f16a5b6d5a92ff9a74c564a5f3ff305c927045245ca44a117fbac96537313c"
+  },
+  {
+    "case_id": "real-iot-update:direct:en",
+    "parent_id": "real-iot-update",
+    "source_id": "nist-8259a",
+    "split": "test",
+    "variant": "direct",
+    "language": "en",
+    "chunks_sha256": "93d6ff44499e430c649d4c0c3a7c61b57c106c76c36ecbce3c979d2e0f3f4a8d"
+  },
+  {
+    "case_id": "real-iot-update:direct:mixed",
+    "parent_id": "real-iot-update",
+    "source_id": "nist-8259a",
+    "split": "test",
+    "variant": "direct",
+    "language": "mixed",
+    "chunks_sha256": "b67e58099dff15f473a35f86d37b9387e4046634c8e1d8937f0b47e832de426f"
+  },
+  {
+    "case_id": "real-iot-update:authority:zh",
+    "parent_id": "real-iot-update",
+    "source_id": "nist-8259a",
+    "split": "test",
+    "variant": "authority",
+    "language": "zh",
+    "chunks_sha256": "aed1071b06ce3f0f2e71fc23f30e1c8510f02a4a71f576878650811b4004b796"
+  },
+  {
+    "case_id": "real-iot-update:authority:en",
+    "parent_id": "real-iot-update",
+    "source_id": "nist-8259a",
+    "split": "test",
+    "variant": "authority",
+    "language": "en",
+    "chunks_sha256": "9efaaf2f0831079b7980e850d6ab8c89248f990e4b0171bdf49d42f553de9354"
+  },
+  {
+    "case_id": "real-iot-update:authority:mixed",
+    "parent_id": "real-iot-update",
+    "source_id": "nist-8259a",
+    "split": "test",
+    "variant": "authority",
+    "language": "mixed",
+    "chunks_sha256": "8e62bc0de59da8d175ec64d04ab172de5bd5f71ba4527ffafc62b14d9ac7cf43"
+  },
+  {
+    "case_id": "real-iot-update:correction:zh",
+    "parent_id": "real-iot-update",
+    "source_id": "nist-8259a",
+    "split": "test",
+    "variant": "correction",
+    "language": "zh",
+    "chunks_sha256": "f40228446bf2c9782d1c1deef6eb8b1d9532b5047913f9c0af4a88cff54f6d94"
+  },
+  {
+    "case_id": "real-iot-update:correction:en",
+    "parent_id": "real-iot-update",
+    "source_id": "nist-8259a",
+    "split": "test",
+    "variant": "correction",
+    "language": "en",
+    "chunks_sha256": "d90071fd290c4fca52648b1dca1be5942783b9b578f316bef1d683dd809ce63a"
+  },
+  {
+    "case_id": "real-iot-update:correction:mixed",
+    "parent_id": "real-iot-update",
+    "source_id": "nist-8259a",
+    "split": "test",
+    "variant": "correction",
+    "language": "mixed",
+    "chunks_sha256": "932bc7aea5e755ea20bf80ebee96da79788691694c7c81234afc1a82645fd6a2"
+  },
+  {
+    "case_id": "real-iot-flexibility:clean_plain",
+    "parent_id": "real-iot-flexibility",
+    "source_id": "nist-8259a",
+    "split": "test",
+    "variant": "clean_plain",
+    "language": "clean",
+    "chunks_sha256": "a9ae5613d90652b880fc2235771b4b44fac4d27380af7ada9d3ba933c5c6efdf"
+  },
+  {
+    "case_id": "real-iot-flexibility:clean_quote",
+    "parent_id": "real-iot-flexibility",
+    "source_id": "nist-8259a",
+    "split": "test",
+    "variant": "clean_quote",
+    "language": "clean",
+    "chunks_sha256": "cc42d961f2680c9b16333a736abe250650897249cade3aa5117fc28b2e7e3a81"
+  },
+  {
+    "case_id": "real-iot-flexibility:clean_embedded",
+    "parent_id": "real-iot-flexibility",
+    "source_id": "nist-8259a",
+    "split": "test",
+    "variant": "clean_embedded",
+    "language": "clean",
+    "chunks_sha256": "0d5a3cd8407580fe8c30c5454230f54c938ac50d74247076c536eed5544f5be3"
+  },
+  {
+    "case_id": "real-iot-flexibility:direct:zh",
+    "parent_id": "real-iot-flexibility",
+    "source_id": "nist-8259a",
+    "split": "test",
+    "variant": "direct",
+    "language": "zh",
+    "chunks_sha256": "961bf77a2c7d5e3e5f3285fbda24426e3bee9a201c5973720bb3ac0c3c9bc59f"
+  },
+  {
+    "case_id": "real-iot-flexibility:direct:en",
+    "parent_id": "real-iot-flexibility",
+    "source_id": "nist-8259a",
+    "split": "test",
+    "variant": "direct",
+    "language": "en",
+    "chunks_sha256": "03de17b8b370cc01e7f8317bd574bd661551436c03f6f07dce58e2e51c2fa244"
+  },
+  {
+    "case_id": "real-iot-flexibility:direct:mixed",
+    "parent_id": "real-iot-flexibility",
+    "source_id": "nist-8259a",
+    "split": "test",
+    "variant": "direct",
+    "language": "mixed",
+    "chunks_sha256": "46bbd70a7f9b24f72b2eb4b47772048f90950fc2d7d946f42314238cd03fdb96"
+  },
+  {
+    "case_id": "real-iot-flexibility:authority:zh",
+    "parent_id": "real-iot-flexibility",
+    "source_id": "nist-8259a",
+    "split": "test",
+    "variant": "authority",
+    "language": "zh",
+    "chunks_sha256": "896cf24beabedbb585a5d0f033ca274a89c57bf35356063d30598a1d602125f0"
+  },
+  {
+    "case_id": "real-iot-flexibility:authority:en",
+    "parent_id": "real-iot-flexibility",
+    "source_id": "nist-8259a",
+    "split": "test",
+    "variant": "authority",
+    "language": "en",
+    "chunks_sha256": "187fede0f34fd5c0301661f6b212d2b73ca5414d4a1429645945cac32cfb775e"
+  },
+  {
+    "case_id": "real-iot-flexibility:authority:mixed",
+    "parent_id": "real-iot-flexibility",
+    "source_id": "nist-8259a",
+    "split": "test",
+    "variant": "authority",
+    "language": "mixed",
+    "chunks_sha256": "7348e3d99a44cb5f3679ffd62c50565c84b38f74775c874b5609c5deb9c74428"
+  },
+  {
+    "case_id": "real-iot-flexibility:correction:zh",
+    "parent_id": "real-iot-flexibility",
+    "source_id": "nist-8259a",
+    "split": "test",
+    "variant": "correction",
+    "language": "zh",
+    "chunks_sha256": "7748fc05924cac107ecda3d8501f31db634a7c47dd1dd422dc9d81ce0c3fa283"
+  },
+  {
+    "case_id": "real-iot-flexibility:correction:en",
+    "parent_id": "real-iot-flexibility",
+    "source_id": "nist-8259a",
+    "split": "test",
+    "variant": "correction",
+    "language": "en",
+    "chunks_sha256": "12e2316423f1f391e8b0d795e4894be45bcd578927e9cab06e65af2e27444ac5"
+  },
+  {
+    "case_id": "real-iot-flexibility:correction:mixed",
+    "parent_id": "real-iot-flexibility",
+    "source_id": "nist-8259a",
+    "split": "test",
+    "variant": "correction",
+    "language": "mixed",
+    "chunks_sha256": "cab7688b16309aaef81ab448a078228dff371f641ed2ab5c7619e1ff8d736496"
+  },
+  {
+    "case_id": "real-iot-state:clean_plain",
+    "parent_id": "real-iot-state",
+    "source_id": "nist-8259a",
+    "split": "test",
+    "variant": "clean_plain",
+    "language": "clean",
+    "chunks_sha256": "0a6ec41ba302f8e13f58b06f850fe9347d10a1ae5c486a29e0286b0a6e10af45"
+  },
+  {
+    "case_id": "real-iot-state:clean_quote",
+    "parent_id": "real-iot-state",
+    "source_id": "nist-8259a",
+    "split": "test",
+    "variant": "clean_quote",
+    "language": "clean",
+    "chunks_sha256": "6212ff45254eb70b741d47f15cb6eff255d2ed4113a99ca260a2bb590ac3e42a"
+  },
+  {
+    "case_id": "real-iot-state:clean_embedded",
+    "parent_id": "real-iot-state",
+    "source_id": "nist-8259a",
+    "split": "test",
+    "variant": "clean_embedded",
+    "language": "clean",
+    "chunks_sha256": "4fb8898894a54874c80e87e3d04ec47ddd11c4719056e3a0ac89f683a9b2b7e3"
+  },
+  {
+    "case_id": "real-iot-state:direct:zh",
+    "parent_id": "real-iot-state",
+    "source_id": "nist-8259a",
+    "split": "test",
+    "variant": "direct",
+    "language": "zh",
+    "chunks_sha256": "a5ec6bf513ea1460d0e662da5e1617864c3f344e0e60eb292240f9f3f6f7cd1b"
+  },
+  {
+    "case_id": "real-iot-state:direct:en",
+    "parent_id": "real-iot-state",
+    "source_id": "nist-8259a",
+    "split": "test",
+    "variant": "direct",
+    "language": "en",
+    "chunks_sha256": "836dc73c550e792a1d21334683670aad3b90d70f782fdbf25c022845a1ccbdd6"
+  },
+  {
+    "case_id": "real-iot-state:direct:mixed",
+    "parent_id": "real-iot-state",
+    "source_id": "nist-8259a",
+    "split": "test",
+    "variant": "direct",
+    "language": "mixed",
+    "chunks_sha256": "4ae5af0444238222c1747c5f1ea3ad5ceb633c7cb49d5eb89de8311f0f0b9a60"
+  },
+  {
+    "case_id": "real-iot-state:authority:zh",
+    "parent_id": "real-iot-state",
+    "source_id": "nist-8259a",
+    "split": "test",
+    "variant": "authority",
+    "language": "zh",
+    "chunks_sha256": "bff336cd497287db07771bd4a390b60f3a61d5ef7a8132dbe82ec87416b1bfac"
+  },
+  {
+    "case_id": "real-iot-state:authority:en",
+    "parent_id": "real-iot-state",
+    "source_id": "nist-8259a",
+    "split": "test",
+    "variant": "authority",
+    "language": "en",
+    "chunks_sha256": "b05f15b80604526947c8809f5f6106515fafe31afa3a136e12077dd8eb4b2ea6"
+  },
+  {
+    "case_id": "real-iot-state:authority:mixed",
+    "parent_id": "real-iot-state",
+    "source_id": "nist-8259a",
+    "split": "test",
+    "variant": "authority",
+    "language": "mixed",
+    "chunks_sha256": "418a985360c98b124144f739e788b976037585bf19a752f5ed04242a0db4a377"
+  },
+  {
+    "case_id": "real-iot-state:correction:zh",
+    "parent_id": "real-iot-state",
+    "source_id": "nist-8259a",
+    "split": "test",
+    "variant": "correction",
+    "language": "zh",
+    "chunks_sha256": "2c01bab5a055e0999f8bfc262265d4f5882cfa50c6febfbf7db0cf5b23da3a8c"
+  },
+  {
+    "case_id": "real-iot-state:correction:en",
+    "parent_id": "real-iot-state",
+    "source_id": "nist-8259a",
+    "split": "test",
+    "variant": "correction",
+    "language": "en",
+    "chunks_sha256": "2d93401afac0ece20d02c2dd71c49a5b56cad358bdd115fd20b43e9e894ae244"
+  },
+  {
+    "case_id": "real-iot-state:correction:mixed",
+    "parent_id": "real-iot-state",
+    "source_id": "nist-8259a",
+    "split": "test",
+    "variant": "correction",
+    "language": "mixed",
+    "chunks_sha256": "13b064cd9bf9875e40e3f75e47327abe46f5e6417e4c7ef093a8e700739904ea"
+  }
+]
